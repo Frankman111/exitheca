@@ -21,7 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b379e2e8-d072-452a-a5cc-aec188060080" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_07_30_182229_create_libraries_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_07_30_182229_create_libraries_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,6 +162,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -179,7 +180,7 @@
       <updated>1596128140590</updated>
       <workItem from="1596128142942" duration="7000" />
       <workItem from="1596130260590" duration="250000" />
-      <workItem from="1596132928047" duration="738000" />
+      <workItem from="1596132928047" duration="1303000" />
     </task>
     <servers />
   </component>
@@ -215,5 +216,9 @@
       <screen x="1920" y="-203" width="2560" height="1400" />
     </state>
     <state width="2517" height="171" key="GridCell.Tab.0.right/0.0.1920.1040/1920.-203.2560.1400@1920.-203.2560.1400" timestamp="1596133193012" />
+    <state x="2701" y="142" key="SettingsEditor" timestamp="1596134151777">
+      <screen x="1920" y="-203" width="2560" height="1400" />
+    </state>
+    <state x="2701" y="142" key="SettingsEditor/0.0.1920.1040/1920.-203.2560.1400@1920.-203.2560.1400" timestamp="1596134151777" />
   </component>
 </project>
