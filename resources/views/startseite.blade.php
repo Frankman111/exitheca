@@ -11,6 +11,8 @@
 
                 <div class="card-body">
                   Willkommen auf der Startseite
+                    <span class="btn btn-primary"><i class="fas fa-plus"></i>Hallo</span>
+                  <span class></span>
                 </div>
             </div>
         </div>
