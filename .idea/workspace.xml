@@ -19,7 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b379e2e8-d072-452a-a5cc-aec188060080" name="Default Changelist" comment="" />
+    <list default="true" id="b379e2e8-d072-452a-a5cc-aec188060080" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_07_30_182229_create_libraries_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_07_30_182229_create_libraries_table.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -155,6 +158,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -175,7 +179,7 @@
       <updated>1596128140590</updated>
       <workItem from="1596128142942" duration="7000" />
       <workItem from="1596130260590" duration="250000" />
-      <workItem from="1596132928047" duration="425000" />
+      <workItem from="1596132928047" duration="738000" />
     </task>
     <servers />
   </component>
