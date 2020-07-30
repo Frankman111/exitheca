@@ -19,15 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b379e2e8-d072-452a-a5cc-aec188060080" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Exitheca.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Exitheca.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/startseite.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/startseite.blade.php" afterDir="false" />
-    </list>
+    <list default="true" id="b379e2e8-d072-452a-a5cc-aec188060080" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -183,7 +175,7 @@
       <updated>1596128140590</updated>
       <workItem from="1596128142942" duration="7000" />
       <workItem from="1596130260590" duration="250000" />
-      <workItem from="1596132928047" duration="113000" />
+      <workItem from="1596132928047" duration="425000" />
     </task>
     <servers />
   </component>
@@ -201,5 +193,23 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="2517" height="171" key="GridCell.Tab.0.bottom" timestamp="1596133193013">
+      <screen x="1920" y="-203" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="171" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.-203.2560.1400@1920.-203.2560.1400" timestamp="1596133193013" />
+    <state width="2517" height="171" key="GridCell.Tab.0.center" timestamp="1596133193012">
+      <screen x="1920" y="-203" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="171" key="GridCell.Tab.0.center/0.0.1920.1040/1920.-203.2560.1400@1920.-203.2560.1400" timestamp="1596133193012" />
+    <state width="2517" height="171" key="GridCell.Tab.0.left" timestamp="1596133193012">
+      <screen x="1920" y="-203" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="171" key="GridCell.Tab.0.left/0.0.1920.1040/1920.-203.2560.1400@1920.-203.2560.1400" timestamp="1596133193012" />
+    <state width="2517" height="171" key="GridCell.Tab.0.right" timestamp="1596133193012">
+      <screen x="1920" y="-203" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="171" key="GridCell.Tab.0.right/0.0.1920.1040/1920.-203.2560.1400@1920.-203.2560.1400" timestamp="1596133193012" />
   </component>
 </project>
