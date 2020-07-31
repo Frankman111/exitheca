@@ -9,17 +9,18 @@
             <div class="card">
                 <div class="card-header">Alle Bücher</div>
 
+                <!-- view from all Books -->
                 <div class="card-body">
                  <ul class="list-group">
                      @foreach($libraries as $library)
-                         <li class="list-group-item">{{$library->titel}}</li>
+                         <li class="list-group-item">{{$library->titel}} <a class="ml-2" href="/library/{{ $library->id }}">Detailansicht</a></li> <!--  detail view from one Book -->
                      @endforeach
                  </ul>
 
                     <!-- create new Book button -->
                     <a class="btn btn-success btn-sm mt-3" data-toggle="modal" data-target="#createNewBook"><i class="fas fa-plus-circle"></i> Neues Buch</a>
 
-                    <!-- create new BookModal -->
+                    <!-- create new Book -->
                     <form action = "/library" method = "post">
                     @csrf
                     <div class="modal fade" id="createNewBook" tabindex="-1" role="dialog" aria-labelledby="newBookLabelLabel" aria-hidden="true">

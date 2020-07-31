@@ -54,10 +54,10 @@ class LibraryController extends Controller
             ]
         );
        $library->save();
-       
+
 
         return $this->index()->with([
-            'input_success' => 'Das Buch <b>'  . $library->titel. '</b> wurde angelegt.'
+            'input_success' => 'Das Buch <b>'  .$library->titel. '</b> wurde angelegt.'
         ]);
     }
 
@@ -69,7 +69,7 @@ class LibraryController extends Controller
      */
     public function show(Library $library)
     {
-        //
+        return view('library.show')->with('library', $library);
     }
 
     /**
