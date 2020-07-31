@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Information')
+@section('title', 'Meine Bücher')
 
 @section('content')
 <div class="container">
@@ -10,9 +10,9 @@
                 <div class="card-header">Alle Bücher</div>
 
                 <div class="card-body">
-                 <ul class="list-group">
 
-                 </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

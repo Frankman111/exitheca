@@ -36,7 +36,14 @@ class LibraryController extends Controller
      */
     public function store(Request $request)
     {
-        //
+       $library = new Library(
+            [
+                'titel' => $request['titel'],
+                'beschreibung' => $request['beschreibung']
+            ]
+        );
+       $library->save();
+       return redirect('/library');
     }
 
     /**

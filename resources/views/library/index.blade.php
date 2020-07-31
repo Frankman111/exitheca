@@ -20,6 +20,8 @@
                     <a class="btn btn-success btn-sm mt-3" data-toggle="modal" data-target="#createModal"><i class="fas fa-plus-circle"></i> Neues Buch</a>
 
                     <!-- create new BookModal -->
+                    <form action = "/library" method = "post">
+                    @csrf
                     <div class="modal fade" id="createModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
@@ -30,27 +32,29 @@
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    <form>
+
                                         <div class="form-group">
                                             <label for="name">Titel</label>
-                                            <input type="text" class="form-control" id="name" name="name">
+                                            <input type="text" class="form-control" id="titel" name="titel">
                                         </div>
                                         <div class="form-group">
                                             <label for="beschreibung">Beschreibung</label>
                                             <textarea class="form-control" id="beschreibung" name="beschreibung" rows="5"></textarea>
                                         </div>
-                                    </form>
+
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Schliessen</button>
-                                    <button type="button" class="btn btn-primary">Absenden</button>
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal" >Schliessen</button>
+                                    <button type="submit" class="btn btn-primary" >Absenden</button>
                                 </div>
+                                </form>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
+
+   
+
+
 @endsection
