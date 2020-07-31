@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 
 class LibraryController extends Controller
 {
+
     /**
      * Display a listing of the resource.
      *
@@ -36,6 +37,15 @@ class LibraryController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate(
+            [
+                'titel' => 'required | min: 3', //titel required, min 3 signs
+                'beschreibung' => 'required | min: 3'
+
+            ]
+        );
+
+
        $library = new Library(
             [
                 'titel' => $request['titel'],
