@@ -25,7 +25,7 @@ class LibraryController extends Controller
      */
     public function create()
     {
-        //
+        return view('library.create');
     }
 
     /**

@@ -23,6 +23,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LibraryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/LibraryController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/library/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/library/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +154,9 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1fPmWqPTWDC8ym0FVWl80LFRRZK" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -162,7 +165,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/library" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
@@ -171,6 +174,7 @@
       <recent name="C:\xampp\htdocs\Exitheca\exitheca\resources\views\library" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Exitheca\exitheca\resources\views\library" />
       <recent name="C:\xampp\htdocs\Exitheca\exitheca\resources\views" />
     </key>
   </component>
@@ -190,7 +194,8 @@
       <updated>1596128140590</updated>
       <workItem from="1596128142942" duration="7000" />
       <workItem from="1596130260590" duration="250000" />
-      <workItem from="1596132928047" duration="2801000" />
+      <workItem from="1596132928047" duration="4624000" />
+      <workItem from="1596197555784" duration="2002000" />
     </task>
     <servers />
   </component>
