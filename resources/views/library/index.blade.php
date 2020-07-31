@@ -17,16 +17,16 @@
                  </ul>
 
                     <!-- create new Book button -->
-                    <a class="btn btn-success btn-sm mt-3" data-toggle="modal" data-target="#createModal"><i class="fas fa-plus-circle"></i> Neues Buch</a>
+                    <a class="btn btn-success btn-sm mt-3" data-toggle="modal" data-target="#createNewBook"><i class="fas fa-plus-circle"></i> Neues Buch</a>
 
                     <!-- create new BookModal -->
                     <form action = "/library" method = "post">
                     @csrf
-                    <div class="modal fade" id="createModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal fade" id="createNewBook" tabindex="-1" role="dialog" aria-labelledby="newBookLabelLabel" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">neues Buch anlegen</h5>
+                                    <h5 class="modal-title" id="newBookLabel">neues Buch anlegen</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
@@ -36,6 +36,7 @@
                                         <div class="form-group">
                                             <label for="name">Titel</label>
                                             <input type="text" class="form-control" id="titel" name="titel" value="{{ old('titel') }}">
+
                                         </div>
                                         <div class="form-group">
                                             <label for="beschreibung">Beschreibung</label>

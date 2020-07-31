@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Library;
 use Illuminate\Http\Request;
+use function Symfony\Component\String\b;
 
 class LibraryController extends Controller
 {
@@ -26,7 +27,7 @@ class LibraryController extends Controller
      */
     public function create()
     {
-        return view('library.create');
+        return view('library.index');
     }
 
     /**
@@ -40,7 +41,7 @@ class LibraryController extends Controller
         $request->validate(
             [
                 'titel' => 'required | min: 3', //titel required, min 3 signs
-                'beschreibung' => 'required | min: 3'
+                'beschreibung' => 'required | min: 5'
 
             ]
         );
@@ -53,7 +54,11 @@ class LibraryController extends Controller
             ]
         );
        $library->save();
-       return redirect('/library');
+       
+
+        return $this->index()->with([
+            'input_success' => 'Das Buch <b>'  . $library->titel. '</b> wurde angelegt.'
+        ]);
     }
 
     /**

@@ -85,12 +85,19 @@
         </nav>
 
         <main class="py-4">
+            @isset($input_success)
+            <div class="container">
+                <div class="alert alert-success" role="alert">
+                    {!! $input_success !!}  <!--Positive Feedback on input for a new Book -->
+                </div>
+            </div>
+            @endisset
             <!--Error return -->
             @if($errors->any())
                 <div class="container">
                     <div class="alert alert-danger">
-                        Bitte prüfe deine Eingaben!
-                        <ul>
+                        Bitte prüfe deine Eingaben! <!--Failure for insert a new book -->
+                        <ul class="mb-0">
                             @foreach($errors->all() as $error)
                             <li>
                             {!! $error !!} <!--This Syntax enables also HTML code -->
