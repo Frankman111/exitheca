@@ -11,7 +11,8 @@
 
                     <div class="card-body">
 
-                        <form action="">
+                        <form action="/library" method="post">
+                            @csrf
                             <div class="form-group">
                                 <label for="titel">Titel</label>
                                 <input type="text" class="form-control" id="titel" name="titel">

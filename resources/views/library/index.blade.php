@@ -13,9 +13,8 @@
                     <ul class="list-group">
                         @foreach($libraries as $library)
                             <li class="list-group-item">
-
                                 {{$library->titel}}
-
+                                <a class="ml-2" href="/library/{{ $library->id }}">Detail</a>
                             </li>
                         @endforeach
                     </ul>
