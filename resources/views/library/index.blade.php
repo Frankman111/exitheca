@@ -29,6 +29,10 @@
                                     {{ $library->created_at }}
 
                                 </div>
+                                <br>
+                                @foreach($library->tags as $tag)
+                                    <a class="badge badge-{{ $tag->style }}" href="">{{ $tag->name }}</a>
+                                @endforeach
                             </li>
                         @endforeach
                     </ul>
