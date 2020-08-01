@@ -13,7 +13,7 @@
                     <ul class="list-group">
                         @foreach($tags as $tag)
                             <li class="list-group-item">
-                                {{$tag->name}}
+                               <span style="font-size: 130%" class="mr-2 badge badge-{{ $tag->style }}">{{$tag->name}}</span> ({{ $tag->style }})
                                 <a class="ml-2 btn btn-outline-primary btn-sm" href="/tag/{{ $tag->id }}/edit" ><i class="fas fa-pen-alt"></i>Bearbeiten</a>
 
                                 <form style="display: inline" action="/tag/{{ $tag->id }}" method="post">
@@ -24,7 +24,7 @@
                             </li>
                         @endforeach
                     </ul>
-                    <a class="btn btn-success btn-sm mt-3" href="tag/create"><i class="fas fa-plus-circle "></i> Neuen Tag anlegen</a>
+                    <a class="btn btn-success btn-sm mt-3" href="/tag/create"><i class="fas fa-plus-circle "></i> Neuen Tag anlegen</a>
                 </div>
             </div>
         </div>
