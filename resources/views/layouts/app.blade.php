@@ -34,9 +34,18 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
                         @auth
+                            <li class="nav-item">
                             <a class="nav-link {{ Request::is('home') ? 'active' : '' }}" href="/home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link {{ Request::is('library*') ? 'active' : '' }}" href="/library">Bücher</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link {{ Request::is('tag*') ? 'active' : '' }}" href="/tag">Tags</a>
+                            </li>
                         @endauth
-                        @guest
+                            @guest
+                            <li>
                             <a class="nav-link {{ Request::is('/') ? 'active' : '' }}" href="/">Startseite</a>
                             @endguest
                             </li>
@@ -51,7 +60,7 @@
                             </li>
                     </ul>
 
-                    </ul>
+
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">

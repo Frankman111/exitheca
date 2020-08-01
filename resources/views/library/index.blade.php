@@ -25,6 +25,9 @@
                         @endforeach
                     </ul>
                     <a class="btn btn-success btn-sm mt-3" href="/library/create"><i class="fas fa-plus-circle "></i> Neues Buch anlegen</a>
+                    <div class="mt-3">
+                        {{ $libraries->links() }}
+                    </div>
                 </div>
             </div>
         </div>

@@ -16,7 +16,7 @@ class LibraryController extends Controller
      */
     public function index()
     {
-        $libraries = Library::all();
+        $libraries = Library::paginate(10);
         return view('library.index')->with('libraries', $libraries);
     }
 

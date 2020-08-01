@@ -12,7 +12,7 @@
                 <div class="card-body">
                     <p><b>{{ $library->titel }}</b></p>
                     <p>{{ $library->beschreibung }}</p>
-                    <a class="btn btn-success btn-sm mt-3" href="/library"><i class="fas fa-arrow-circle-up"></i> Zurück</a>
+                    <a class="btn btn-success btn-sm mt-3" href="{{ URL::previous() }}"><i class="fas fa-arrow-circle-up"></i> Zurück</a>
                 </div>
             </div>
         </div>
