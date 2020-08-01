@@ -8,7 +8,7 @@ class Library extends Model
 {
     protected $fillable = [
 
-      'titel', 'beschreibung'
+      'titel', 'beschreibung', 'user_id'
 
     ];
 

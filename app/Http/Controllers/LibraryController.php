@@ -51,7 +51,8 @@ class LibraryController extends Controller
        $library = new Library(
             [
                 'titel' => $request['titel'],
-                'beschreibung' => $request['beschreibung']
+                'beschreibung' => $request['beschreibung'],
+                'user_id' => auth()->id()
             ]
         );
        $library->save();
