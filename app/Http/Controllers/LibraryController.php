@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Library;
 use Illuminate\Http\Request;
-use function Symfony\Component\String\b;
+use Illuminate\Support\Carbon;
 
 class LibraryController extends Controller
 {
@@ -16,8 +16,9 @@ class LibraryController extends Controller
      */
     public function index()
     {
-        $libraries = Library::paginate(10);
+        $libraries = Library::orderBy('created_at', 'DESC')->paginate(10);
         return view('library.index')->with('libraries', $libraries);
+        //Carbon::
     }
 
     /**

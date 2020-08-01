@@ -21,6 +21,11 @@
                                     @method('DELETE')
                                     <input class="btn btn-outline-danger btn-sm ml-2" type="submit" value="löschen">
                                 </form>
+                                <div class="float-right">
+
+                                    {{ $library->created_at }}
+
+                                </div>
                             </li>
                         @endforeach
                     </ul>
