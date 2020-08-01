@@ -27,4 +27,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('library', 'LibraryController');
 
+Route::resource('tag', 'TagController');
+
 
