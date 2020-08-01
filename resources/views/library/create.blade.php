@@ -15,13 +15,16 @@
                             @csrf
                             <div class="form-group">
                                 <label for="titel">Titel</label>
-                                <input type="text" class="form-control" id="titel" name="titel">
+                                <input type="text" class="form-control" id="titel" name="titel"> </input>
+
                             </div>
                             <div class="form-group">
                                 <label for="beschreibung">Beschreibung</label>
-                                <input type="text" class="form-control" id="beschreibung" name="beschreibung">
+                                <textarea class="form-control" id="beschreibung" name="beschreibung" rows="5"></textarea>
                             </div>
-                            <input class="btn btn-primary mt-3" type="submit" value="absenden">
+
+                            <input class="btn btn-primary mt-4" type="submit" value="absenden">
+
                             <a class="btn btn-primary btn-sm mt-3 float-right" href="/library"><i class="fas fa-arrow-circle-up "></i> Zurück</a>
                         </form>
 
