@@ -16,6 +16,11 @@
                                 {{$library->titel}}
                                 <a class=" ml-2" href="/library/{{ $library->id }}">Detail</a>
                                 <a class="ml-2 btn btn-outline-primary btn-sm" href="/library/{{ $library->id }}/edit" ><i class="fas fa-pen-alt"></i>Bearbeiten</a>
+                                <form style="display: inline" action="/library/{{ $library->id }}" method="post">
+                                    @csrf
+                                    @method('DELETE')
+                                    <input class="btn btn-outline-danger btn-sm ml-2" type="submit" value="löschen">
+                                </form>
                             </li>
                         @endforeach
                     </ul>

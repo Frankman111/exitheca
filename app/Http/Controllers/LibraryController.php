@@ -94,7 +94,24 @@ class LibraryController extends Controller
      */
     public function update(Request $request, Library $library)
     {
-        //
+        $request->validate(
+            [
+                'titel' => 'required | min: 3', //titel required, min 3 signs
+                'beschreibung' => 'required | min: 5'
+
+            ]
+        );
+
+        $library->update([
+
+            'titel' => $request->titel,
+            'beschreibung' => $request->beschreibung
+
+        ]);
+
+        return $this->index()->with([
+            'input_success' => 'Das Buch <b>'  .$request->titel. '</b> wurde bearbeitet.'
+        ]);
     }
 
     /**
@@ -105,6 +122,12 @@ class LibraryController extends Controller
      */
     public function destroy(Library $library)
     {
-        //
+
+        $old_titel = $library->titel; // save the old name
+        $library->delete();
+
+        return $this->index()->with([
+            'input_success' => 'Das Buch <b>'  .$old_titel. '</b> wurde gelöscht.'
+        ]);
     }
 }
