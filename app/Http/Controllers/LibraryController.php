@@ -27,7 +27,7 @@ class LibraryController extends Controller
      */
     public function create()
     {
-        return view('library.index');
+        return view('library.create');
     }
 
     /**
@@ -69,7 +69,9 @@ class LibraryController extends Controller
      */
     public function show(Library $library)
     {
+
         return view('library.show')->with('library', $library);
+
     }
 
     /**
@@ -80,7 +82,7 @@ class LibraryController extends Controller
      */
     public function edit(Library $library)
     {
-        //
+        return view('library.edit')->with('library', $library);
     }
 
     /**
