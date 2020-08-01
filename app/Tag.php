@@ -11,4 +11,8 @@ class Tag extends Model
         'name', 'style'
 
     ];
+
+    public function libraries(){
+        return $this->belongsToMany('App\Library');
+    }
 }

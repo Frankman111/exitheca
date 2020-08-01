@@ -11,4 +11,12 @@ class Library extends Model
       'titel', 'beschreibung'
 
     ];
+
+    public function user(){
+        return $this->belongsTo('App\User');
+    }
+
+    public function tags(){
+        return $this->belongsToMany('App\Tag');
+    }
 }
