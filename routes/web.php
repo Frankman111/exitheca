@@ -29,5 +29,7 @@ Route::resource('library', 'LibraryController');
 
 Route::resource('tag', 'TagController');
 
+Route::get('/library/tag/{tag_id}', 'LibraryTagController@getFilteredLibraries')->name('library_tag');
+
 
 

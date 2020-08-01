@@ -14,7 +14,7 @@
                     <p>{{ $library->beschreibung }}</p>
                     <p>
                         @foreach($library->tags as $tag)
-                            <a class="badge badge-{{ $tag->style }}" href="">{{ $tag->name }}</a>
+                          <a class="badge badge-{{ $tag->style }}" href="/library/tag/{{$tag->id}}">{{ $tag->name }}</a> {{--  Tags in der Detailansicht anzeigen--}}
                         @endforeach
                     </p>
                     <a class="btn btn-success btn-sm mt-3" href="{{ URL::previous() }}"><i class="fas fa-arrow-circle-up"></i> Zurück</a>

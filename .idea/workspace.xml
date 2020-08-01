@@ -21,8 +21,10 @@
   <component name="ChangeListManager">
     <list default="true" id="b379e2e8-d072-452a-a5cc-aec188060080" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Tag.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Tag.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/library/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/library/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/library/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/library/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,7 +166,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/library" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
@@ -173,8 +175,8 @@
       <recent name="C:\xampp\htdocs\Exitheca\exitheca\resources\views\library" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\Exitheca\exitheca\resources\views" />
       <recent name="C:\xampp\htdocs\Exitheca\exitheca\resources\views\library" />
+      <recent name="C:\xampp\htdocs\Exitheca\exitheca\resources\views" />
       <recent name="C:\xampp\htdocs\Exitheca\exitheca\resources\lang\de" />
     </key>
   </component>
@@ -196,7 +198,7 @@
       <workItem from="1596130260590" duration="250000" />
       <workItem from="1596132928047" duration="4624000" />
       <workItem from="1596197555784" duration="19819000" />
-      <workItem from="1596259531596" duration="24301000" />
+      <workItem from="1596259531596" duration="26474000" />
     </task>
     <servers />
   </component>

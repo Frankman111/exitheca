@@ -15,4 +15,11 @@ class Tag extends Model
     public function libraries(){
         return $this->belongsToMany('App\Library');
     }
+
+    public function filteredLibraries(){
+        return $this->belongsToMany('App\Library')
+            ->wherePivot('tag_id', $this->id) //Kreuztabelle einbinden zu Abfrage
+            ->orderBy('updated_at', 'DESC');
+
+    }
 }
