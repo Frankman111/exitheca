@@ -55,7 +55,7 @@ class LibraryController extends Controller
             [
                 'titel' => 'required | min: 3', //titel required, min 3 signs
                 'beschreibung' => 'required | min: 5',
-                'bild' => 'mimes::jpg,bmp,png,jpg,gif'
+                'bild' => 'mimes::jpeg,bmp,png,jpg,gif'
 
             ]
         );
@@ -124,10 +124,24 @@ class LibraryController extends Controller
             [
                 'titel' => 'required | min: 3', //titel required, min 3 signs
                 'beschreibung' => 'required | min: 5',
-                'bild' => 'mimes::jpg,bmp,png,jpg,gif'
+                'bild' => 'mimes:jpeg,bmp,png,jpg,gif'
 
             ]
         );
+
+        if ($request->bild) {
+            $picture = Image::make($request->bild);
+
+            $width = $picture -> width();
+            $height = $picture ->height();
+            if ( $width > $height){
+
+                dd('Querformat');
+            }else{
+                dd('Hochformat');
+            }
+
+        }
 
         $library->update([
 
