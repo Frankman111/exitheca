@@ -11,13 +11,18 @@
 
                     <div class="card-body">
 
-                        <form action="/library" method="post">
+                        <form autocomplete="off" action="/library" method="post" enctype="multipart/form-data">
                             @csrf
                             <div class="form-group">
                                 <label for="titel">Titel</label>
                                 <input type="text" class="form-control {{ $errors->has('titel') ? 'border-danger' : '' }}" id="titel" name="titel" value="{{ old('titel') }}">
                                 <small class="form-text text-danger">{!! $errors->first('titel') !!}</small>
 
+                            </div>
+                            <div class="form-group">
+                                <label for="titel">Bild</label>
+                                <input type="file" class="form-control {{ $errors->has('bild') ? 'border-danger' : '' }}" id="bild" name="bild" value="">
+                                <small class="form-text text-danger">{!! $errors->first('bild') !!}</small>
                             </div>
                             <div class="form-group">
                                 <label for="beschreibung">Beschreibung</label>

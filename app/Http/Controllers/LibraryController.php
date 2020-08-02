@@ -19,7 +19,7 @@ class LibraryController extends Controller
      */
     public function index()
     {
-        
+
 
         $input_success = Session::get('input_success'); //Erfolgsmeldung refresh
 
@@ -54,7 +54,8 @@ class LibraryController extends Controller
         $request->validate(
             [
                 'titel' => 'required | min: 3', //titel required, min 3 signs
-                'beschreibung' => 'required | min: 5'
+                'beschreibung' => 'required | min: 5',
+                'bild' => 'mimes::jpg,bmp,png,jpg,gif'
 
             ]
         );
@@ -122,7 +123,8 @@ class LibraryController extends Controller
         $request->validate(
             [
                 'titel' => 'required | min: 3', //titel required, min 3 signs
-                'beschreibung' => 'required | min: 5'
+                'beschreibung' => 'required | min: 5',
+                'bild' => 'mimes::jpg,bmp,png,jpg,gif'
 
             ]
         );
