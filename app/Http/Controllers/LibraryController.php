@@ -55,7 +55,7 @@ class LibraryController extends Controller
             [
                 'titel' => 'required | min: 3', //titel required, min 3 signs
                 'beschreibung' => 'required | min: 5',
-                'bild' => 'mimes::jpeg,bmp,png,jpg,gif'
+                'bild' => 'mimes:jpeg,bmp,png,jpg,gif'
 
             ]
         );
@@ -69,6 +69,14 @@ class LibraryController extends Controller
             ]
         );
        $library->save();
+
+        if ($request->bild) {
+
+            $this->saveImages($request->bild, $library->id);
+
+        }
+
+
 
         return redirect('/library/' . $library->id)->with('input_hint', 'Bitte weise ein paar Tags zu');
 
@@ -130,18 +138,12 @@ class LibraryController extends Controller
         );
 
         if ($request->bild) {
-            $picture = Image::make($request->bild);
 
-            $width = $picture -> width();
-            $height = $picture ->height();
-            if ( $width > $height){
-
-                dd('Querformat');
-            }else{
-                dd('Hochformat');
-            }
+            $this->saveImages($request->bild, $library->id);
 
         }
+
+
 
         $library->update([
 
@@ -170,5 +172,29 @@ class LibraryController extends Controller
         return back()->with([
             'input_success' => 'Das Buch <b>'  .$old_titel. '</b> wurde gelöscht.'
         ]);
+    }
+    public function saveImages($picInput, $library_id)
+    {
+        $picture = Image::make($picInput);
+
+        $width = $picture -> width();
+        $height = $picture ->height();
+        if ( $width > $height){
+            Image::make($picInput)//Querformat Bild
+            ->widen(1200)
+                ->save(public_path(). '/img/library/' . $library_id . '_large.jpg');
+            Image::make($picInput)
+                ->widen(60)
+                ->save(public_path(). '/img/library/' . $library_id . '_thumb.jpg');
+
+        }else{
+            Image::make($picInput)//Hochformat Bild
+            ->widen(900)
+                ->save(public_path(). '/img/library/' . $library_id . '_large.jpg');
+            Image::make($picInput)
+                ->widen(60)
+                ->save(public_path(). '/img/library/' . $library_id . '_thumb.jpg');
+        }
+
     }
 }

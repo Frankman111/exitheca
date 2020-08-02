@@ -13,6 +13,12 @@
                     <ul class="list-group">
                         @foreach($libraries as $library)
                             <li class="list-group-item">
+{{--                                Bilder nach Tags sortiert mit anzeigen--}}
+                                @if(file_exists("img/library/" . $library->id . "_thumb.jpg"))
+                                    <a class="mr-1" title="Details anzeigen" href="/library/{{ $library->id }}">
+                                        <img src="/img/library/{{ $library->id }}_thumb.jpg" alt="thumb"></a>
+                                @endif
+
                                 {{$library->titel}}
                                 <a class=" ml-2" href="/library/{{ $library->id }}">Detail</a>
 

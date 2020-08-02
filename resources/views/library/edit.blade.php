@@ -20,6 +20,11 @@
                                 <small class="form-text text-danger">{!! $errors->first('titel') !!}</small>
 
                             </div>
+                            <div class="mb-2">
+                                @if(file_exists("img/library/" . $library->id . "_large.jpg"))
+                                        <img style="max-width: 400px; max-height: 300px;"  src="/img/library/{{ $library->id }}_large.jpg" alt="large"></a>
+                                @endif
+                            </div>
                             <div class="form-group">
                                 <label for="titel">Bild</label>
                                 <input type="file" class="form-control {{ $errors->has('bild') ? 'border-danger' : '' }}" id="bild" name="bild" value="">
