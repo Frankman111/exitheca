@@ -7,6 +7,13 @@
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="card">
+
+                @isset($filter)
+                    <div class="card-header">Bücher gefiltert nach:
+                        <span style="font-size: 130%;" class="badge badge-{{ $filter->style  }}">{{ $filter->name }}</span>
+                        <span class="float-right"><a href="/library">Alle Bücher anzeigen</a></span>
+                    </div>
+                @endisset
                 <div class="card-header">Alle Bücher</div>
 
                 <div class="card-body">

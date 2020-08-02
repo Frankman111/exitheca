@@ -10,12 +10,16 @@ class LibraryTagController extends Controller
     public function getFilteredLibraries($tag_id){
 
         $tag = new Tag();
-        $filteredLibraries = $tag::findOrFail($tag_id)->filteredLibraries()->paginate(10);
+        $filter = $tag::findOrFail($tag_id);
+        $libraries = $filter->filteredLibraries()->paginate(10);
 
-        return view('library.filteredByTag')->with(
-            [
-                'libraries' => $filteredLibraries
-            ]
+        return view('library.index',[
+
+            'libraries' => $libraries,
+            'filter' => $filter
+
+
+        ]
     );
 
     }
