@@ -18,8 +18,15 @@ class LibraryController extends Controller
      */
     public function index()
     {
+        $input_success = Session::get('input_success'); //Erfolgsmeldung refresh
+
         $libraries = Library::orderBy('created_at', 'DESC')->paginate(10);
-        return view('library.index')->with('libraries', $libraries);
+        return view('library.index')->with(
+            [
+                'libraries' => $libraries,
+                'input_success' => $input_success
+        ]
+        );
         //Carbon::
     }
 
@@ -141,7 +148,7 @@ class LibraryController extends Controller
         $old_titel = $library->titel; // save the old name
         $library->delete();
 
-        return $this->index()->with([
+        return back()->with([
             'input_success' => 'Das Buch <b>'  .$old_titel. '</b> wurde gelöscht.'
         ]);
     }
