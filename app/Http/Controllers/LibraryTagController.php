@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Library;
 use Illuminate\Http\Request;
 use App\Tag;
 
@@ -11,16 +12,36 @@ class LibraryTagController extends Controller
 
         $tag = new Tag();
         $filter = $tag::findOrFail($tag_id);
-        $libraries = $filter->filteredLibraries()->paginate(10);
+        $filteredlibraries = $filter->filteredLibraries()->paginate(10);
 
-        return view('library.index',[
-
-            'libraries' => $libraries,
-            'filter' => $filter
-
-
+        return view('library.filteredByTag')->with(
+        [
+            'libraries' => $filteredlibraries,
+            'tag' => $filter
         ]
     );
 
     }
+
+    public function attachTag($library_id, $tag_id){
+
+        $library = Library::find($library_id);
+        $tag = Tag::find($tag_id);
+        $library -> tags()->attach($tag_id);
+
+        return back()->with('input_success', 'Der Tag <b>'.$tag->name. '</b> wurde hinzugefügt');
+
+    }
+
+    public function detachTag($library_id, $tag_id){
+
+        $library = Library::find($library_id);
+        $tag = Tag::find($tag_id);
+        $library -> tags()->detach($tag_id);
+
+        return back()->with('input_success', 'Der Tag <b>'.$tag->name. '</b> wurde entfernt');
+
+    }
+
+
 }

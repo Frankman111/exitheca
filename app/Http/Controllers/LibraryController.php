@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Library;
+use App\Tag;
 use Illuminate\Http\Request;
 use Illuminate\Support\Carbon;
+use Illuminate\Support\Facades\Session;
 
 class LibraryController extends Controller
 {
@@ -71,8 +73,19 @@ class LibraryController extends Controller
      */
     public function show(Library $library)
     {
+        $allTags = Tag::all(); //alle Tags holen
+        $usedTags = $library->tags;
+        $openTags = $allTags ->diff($usedTags);
 
-        return view('library.show')->with('library', $library);
+        $input_success = Session::get('input_success');
+        return view('library.show')->with(
+            [
+                'library' => $library,
+                'input_success' => $input_success,
+                'openTags' => $openTags
+            ]
+
+            );
 
     }
 

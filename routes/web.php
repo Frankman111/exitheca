@@ -31,5 +31,9 @@ Route::resource('tag', 'TagController');
 
 Route::get('/library/tag/{tag_id}', 'LibraryTagController@getFilteredLibraries')->name('library_tag');
 
+Route::get('/library/{library_id}/tag/{tag_id}/attach', 'LibraryTagController@attachTag');
+
+Route::get('/library/{library_id}/tag/{tag_id}/detach','LibraryTagController@detachTag');
+
 
 
