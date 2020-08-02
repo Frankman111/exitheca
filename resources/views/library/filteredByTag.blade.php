@@ -34,7 +34,7 @@
 
                                     {{ $library->created_at }}
                                 </div>
-                                
+
                                 {{--Tags angeben bei den Einträgen --}}
                                 @foreach($library->tags as $tag)
                                     <a class="badge badge-{{ $tag->style }} " href="/library/tag/{{$tag->id}}">{{ $tag->name }}</a>

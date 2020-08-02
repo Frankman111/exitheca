@@ -23,6 +23,9 @@
                             <div class="mb-2">
                                 @if(file_exists("img/library/" . $library->id . "_large.jpg"))
                                         <img style="max-width: 400px; max-height: 300px;"  src="/img/library/{{ $library->id }}_large.jpg" alt="large"></a>
+                                        <div class="float-right">
+                                            <a class="btn btn-sm btn-outline-danger" href="/delete-image/library/{{ $library->id  }}">Bild löschen</a>
+                                        </div>
                                 @endif
                             </div>
                             <div class="form-group">

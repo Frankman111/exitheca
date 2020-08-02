@@ -36,3 +36,5 @@ Route::get('/library/{library_id}/tag/{tag_id}/attach', 'LibraryTagController@at
 
 Route::get('/library/{library_id}/tag/{tag_id}/detach','LibraryTagController@detachTag');
 
+//Bilder löschen
+Route::get('/delete-image/library/{library_id}','LibraryController@deleteImages');

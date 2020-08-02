@@ -195,6 +195,15 @@ class LibraryController extends Controller
                 ->widen(60)
                 ->save(public_path(). '/img/library/' . $library_id . '_thumb.jpg');
         }
+    }
+
+        public function deleteImages($library_id){
+            if (file_exists(public_path(). '/img/library/' . $library_id . '_thumb.jpg'))
+                unlink(public_path(). '/img/library/' . $library_id . '_thumb.jpg');
+            if (file_exists(public_path(). '/img/library/' . $library_id . '_large.jpg'))
+                unlink(public_path(). '/img/library/' . $library_id . '_large.jpg');
+            return back();
+
 
     }
 }

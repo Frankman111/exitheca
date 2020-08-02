@@ -90,17 +90,17 @@
         </nav>
 
         <main class="py-4">
-            @isset($meldg_success)
+            @isset($input_success)
                 <div class="container">
                     <div class="alert alert-success">
-                        {!! $meldg_success !!}
+                        {!! $input_success !!}
                     </div>
                 </div>
             @endisset
-            @isset($meldg_hinweis)
+            @isset($input_hinweis)
                 <div class="container">
                     <div class="alert alert-warning">
-                        {!! $meldg_hinweis !!}
+                        {!! $input_hinweis !!}
                     </div>
                 </div>
             @endisset
