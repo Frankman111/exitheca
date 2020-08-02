@@ -21,7 +21,15 @@
   <component name="ChangeListManager">
     <list default="true" id="b379e2e8-d072-452a-a5cc-aec188060080" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LibraryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/LibraryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,14 +176,15 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Exitheca\exitheca\public\img" />
+      <recent name="C:\xampp\htdocs\Exitheca\exitheca\resources\views\library" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\Exitheca\exitheca\public" />
       <recent name="C:\xampp\htdocs\Exitheca\exitheca\resources\views\library" />
       <recent name="C:\xampp\htdocs\Exitheca\exitheca\resources\views" />
       <recent name="C:\xampp\htdocs\Exitheca\exitheca\resources\lang\de" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\Exitheca\exitheca\resources\views\library" />
     </key>
   </component>
   <component name="RunManager">
@@ -221,22 +230,26 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2610" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1596358217985" />
-    <state width="2517" height="171" key="GridCell.Tab.0.bottom" timestamp="1596133193013">
-      <screen x="1920" y="-203" width="2560" height="1400" />
+    <state width="1877" height="114" key="GridCell.Tab.0.bottom" timestamp="1596374536422">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="2517" height="171" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.-203.2560.1400@1920.-203.2560.1400" timestamp="1596133193013" />
-    <state width="2517" height="171" key="GridCell.Tab.0.center" timestamp="1596133193012">
-      <screen x="1920" y="-203" width="2560" height="1400" />
+    <state width="1877" height="114" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1596374536422" />
+    <state width="1877" height="114" key="GridCell.Tab.0.center" timestamp="1596374536422">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="2517" height="171" key="GridCell.Tab.0.center/0.0.1920.1040/1920.-203.2560.1400@1920.-203.2560.1400" timestamp="1596133193012" />
-    <state width="2517" height="171" key="GridCell.Tab.0.left" timestamp="1596133193012">
-      <screen x="1920" y="-203" width="2560" height="1400" />
+    <state width="1877" height="114" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1596374536422" />
+    <state width="1877" height="114" key="GridCell.Tab.0.left" timestamp="1596374536422">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="2517" height="171" key="GridCell.Tab.0.left/0.0.1920.1040/1920.-203.2560.1400@1920.-203.2560.1400" timestamp="1596133193012" />
-    <state width="2517" height="171" key="GridCell.Tab.0.right" timestamp="1596133193012">
-      <screen x="1920" y="-203" width="2560" height="1400" />
+    <state width="1877" height="114" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1596374536422" />
+    <state width="1877" height="114" key="GridCell.Tab.0.right" timestamp="1596374536422">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="2517" height="171" key="GridCell.Tab.0.right/0.0.1920.1040/1920.-203.2560.1400@1920.-203.2560.1400" timestamp="1596133193012" />
+    <state width="1877" height="114" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1596374536422" />
     <state x="2701" y="142" key="SettingsEditor" timestamp="1596134151777">
       <screen x="1920" y="-203" width="2560" height="1400" />
     </state>

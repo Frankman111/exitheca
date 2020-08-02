@@ -33,12 +33,11 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
                             @auth
                                 <a class="nav-link {{ Request::is('home') ? 'active' : '' }}" href="/home">Home</a>
-
                             @endauth
                             @guest
-                                <li>
                                 <a class="nav-link {{ Request::is('/') ? 'active' : '' }}" href="/">Startseite</a>
                             @endguest
                         </li>
@@ -51,9 +50,8 @@
                         <li class="nav-item">
                             <a class="nav-link {{ Request::is('info') ? 'active' : '' }}" href="/info">Information</a>
                         </li>
+
                     </ul>
-
-
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
@@ -92,17 +90,17 @@
         </nav>
 
         <main class="py-4">
-            @isset($input_success)
+            @isset($meldg_success)
                 <div class="container">
                     <div class="alert alert-success">
-                        {!! $input_success !!}
+                        {!! $meldg_success !!}
                     </div>
                 </div>
             @endisset
-            @isset($input_hint)
+            @isset($meldg_hinweis)
                 <div class="container">
                     <div class="alert alert-warning">
-                        {!! $input_hint !!}
+                        {!! $meldg_hinweis !!}
                     </div>
                 </div>
             @endisset

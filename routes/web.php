@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -35,9 +36,3 @@ Route::get('/library/{library_id}/tag/{tag_id}/attach', 'LibraryTagController@at
 
 Route::get('/library/{library_id}/tag/{tag_id}/detach','LibraryTagController@detachTag');
 
-
-
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
