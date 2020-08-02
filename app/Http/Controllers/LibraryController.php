@@ -7,6 +7,7 @@ use App\Tag;
 use Illuminate\Http\Request;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Session;
+use Intervention\Image\Facades\Image;
 
 class LibraryController extends Controller
 {
@@ -18,6 +19,8 @@ class LibraryController extends Controller
      */
     public function index()
     {
+        
+
         $input_success = Session::get('input_success'); //Erfolgsmeldung refresh
 
         $libraries = Library::orderBy('created_at', 'DESC')->paginate(10);
