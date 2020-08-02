@@ -33,11 +33,11 @@
                                 <div class="float-right">
 
                                     {{ $library->created_at }}
-
                                 </div>
-                                <br>{{--Tags angeben bei den Einträgen --}}
+                                
+                                {{--Tags angeben bei den Einträgen --}}
                                 @foreach($library->tags as $tag)
-                                    <a class="badge badge-{{ $tag->style }}" href="/library/tag/{{$tag->id}}">{{ $tag->name }}</a>
+                                    <a class="badge badge-{{ $tag->style }} " href="/library/tag/{{$tag->id}}">{{ $tag->name }}</a>
                                 @endforeach
                             </li>
                         @endforeach

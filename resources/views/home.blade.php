@@ -8,14 +8,14 @@
                     <div class="card-header">Meine Seite</div>
                         <div class="card-body">
                             <div class="row">
-                                    <h2>Hallo {{auth()->user()->name }}</h2>
+                                    <h2 class="ml-3">Hallo {{auth()->user()->name }}</h2>
                                     @if (session('status'))
                                         <div class="alert alert-success" role="alert">
                                             {{ session('status') }}
                                         </div>
                                     @endif
                                 </div>
-                               
+
                                     @isset($libraries)
                                         @if($libraries->count() > 0)
                                             <h5>Deine Hobbies</h5>
@@ -38,7 +38,7 @@
                                                         @method('DELETE')
                                                         <input class="btn btn-outline-danger btn-sm ml-2" type="submit" value="Löschen">
                                                     </form>
-
+                                                        <br>
                                                     @foreach($library->tags as $tag)
                                                         <a class="badge badge-{{$tag->style}}" href="/library/tag/{{ $tag->id }}">{{ $tag->name }}</a>
                                                     @endforeach
