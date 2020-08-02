@@ -33,24 +33,24 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-                        @auth
-                            <a class="nav-link {{ Request::is('home') ? 'active' : '' }}" href="/home">Home</a>
+                            @auth
+                                <a class="nav-link {{ Request::is('home') ? 'active' : '' }}" href="/home">Home</a>
 
-                        @endauth
-                        @guest
-                            <li>
-                            <a class="nav-link {{ Request::is('/') ? 'active' : '' }}" href="/">Startseite</a>
+                            @endauth
+                            @guest
+                                <li>
+                                <a class="nav-link {{ Request::is('/') ? 'active' : '' }}" href="/">Startseite</a>
                             @endguest
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link {{ Request::is('library*') ? 'active' : '' }}" href="/library">Bücher</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link {{ Request::is('tag*') ? 'active' : '' }}" href="/tag">Tags</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link {{ Request::is('info') ? 'active' : '' }}" href="/info">Information</a>
-                            </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {{ Request::is('library*') ? 'active' : '' }}" href="/library">Bücher</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {{ Request::is('tag*') ? 'active' : '' }}" href="/tag">Tags</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {{ Request::is('info') ? 'active' : '' }}" href="/info">Information</a>
+                        </li>
                     </ul>
 
 
@@ -99,10 +99,10 @@
                     </div>
                 </div>
             @endisset
-            @isset($$input_hinweis)
+            @isset($input_hint)
                 <div class="container">
                     <div class="alert alert-warning">
-                        {!! $input_hinweis !!}
+                        {!! $input_hint !!}
                     </div>
                 </div>
             @endisset

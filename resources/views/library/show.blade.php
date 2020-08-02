@@ -12,20 +12,23 @@
                 <div class="card-body">
                     <p><b>{{ $library->titel }}</b></p>
                     <p>{{ $library->beschreibung }}</p>
+                    @if($library->tags->count()>0)
                     <p>
-                        <b>Verknüpfte Tags: (klicken zum entfernen)</b>
+                        <b>Verknüpfte Tags:</b> (klicken zum entfernen)<br>
                         @foreach($library->tags as $tag)
                           <a class="badge badge-{{ $tag->style }}" href="/library/{{ $library->id }}/tag/{{ $tag->id }}/detach">{{ $tag->name }}</a> {{--  Tags in der Detailansicht anzeigen--}}
                         @endforeach
                     </p>
+                    @endif
+
                     <p>
 
-                        <b>Verfügbare Tags: (klicken zum hinzufügen)</b>
+                        <b>Verfügbare Tags: </b> (klicken zum hinzufügen)<br>
                         @foreach($openTags as $tag)
                           <a class="badge badge-{{ $tag->style }}" href="/library/{{ $library->id }}/tag/{{ $tag->id }}/attach">{{ $tag->name }}</a> {{--  Tags in der Detailansicht anzeigen--}}
                         @endforeach
                     </p>
-                    <a class="btn btn-success btn-sm mt-3" href="{{ URL::previous() }}"><i class="fas fa-arrow-circle-up"></i> Zurück</a>
+                    <a class="btn btn-success btn-sm mt-3" href="/library"><i class="fas fa-arrow-circle-up"></i> Zurück</a>
                 </div>
             </div>
         </div>

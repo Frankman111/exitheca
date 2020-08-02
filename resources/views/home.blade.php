@@ -5,16 +5,17 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
+                <div class="card-header">Meine Seite</div>
 
                 <div class="card-body">
+                    <h2>Hallo {{ auth()->user()->name }}</h2>
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">
                             {{ session('status') }}
                         </div>
                     @endif
+                        <a class="btn btn-success btn-sm" href="/library/create"><i class="fas fa-plus-circle"></i>neues Buch anlegen</a>
 
-                    {{ __('You are logged in!') }}
                 </div>
             </div>
         </div>

@@ -59,10 +59,8 @@ class LibraryController extends Controller
         );
        $library->save();
 
+        return redirect('/library/' . $library->id)->with('input_hint', 'Bitte weise ein paar Tags zu');
 
-        return $this->index()->with([
-            'input_success' => 'Das Buch <b>'  .$library->titel. '</b> wurde angelegt.'
-        ]);
     }
 
     /**
@@ -77,11 +75,13 @@ class LibraryController extends Controller
         $usedTags = $library->tags;
         $openTags = $allTags ->diff($usedTags);
 
-        $input_success = Session::get('input_success');
+        $input_success = Session::get('input_success'); //jeweils ein Refresh für die Seite zuvor
+        $input_hint = Session::get('input_hint'); //jeweils ein Refresh für die Seite zuvor
         return view('library.show')->with(
             [
                 'library' => $library,
                 'input_success' => $input_success,
+                'input_hint' => $input_hint,
                 'openTags' => $openTags
             ]
 
