@@ -20,6 +20,10 @@
                     <ul class="list-group">
                         @foreach($libraries as $library)
                             <li class="list-group-item">
+                                <a class="mr-1" title="Details" href="/library/{{ $library->id }}">
+                                    <img src="/img/thumb_quer.jpg" alt="thumb">
+                                </a>
+
                                 {{$library->titel}}
                                 <a class=" ml-2" href="/library/{{ $library->id }}">Detail</a>
 

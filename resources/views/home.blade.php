@@ -44,7 +44,7 @@
                         @endforeach
                         </ul>
                     @endisset
-                        <a class="btn btn-success btn-sm" href="/library/create"><i class="fas fa-plus-circle"></i>neues Buch anlegen</a>
+                        <a class="btn btn-success btn-sm mt-3" href="/library/create"><i class="fas fa-plus-circle"></i>neues Buch anlegen</a>
 
                 </div>
             </div>

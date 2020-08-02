@@ -37,3 +37,7 @@ Route::get('/library/{library_id}/tag/{tag_id}/detach','LibraryTagController@det
 
 
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
