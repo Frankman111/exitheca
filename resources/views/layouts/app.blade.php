@@ -25,8 +25,7 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                   <i class="fa fas-home"></i>
+                <a class="navbar-brand fas fa-home" href="{{ url('/') }}">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -35,6 +34,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
+                        <i class="fa fas-home"></i>
                         <li class="nav-item">
                             @auth
                                 <li class="nav-item">
@@ -43,18 +43,15 @@
                                 <li class="nav-item">
                                     <a class="nav-link {{ Request::is('library*') ? 'active' : '' }}" href="/library">Bücher</a>
                                 </li>
+                                @isset(auth()->user()->role->admin)
                                 <li class="nav-item">
                                     <a class="nav-link {{ Request::is('tag*') ? 'active' : '' }}" href="/tag">Tags</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link {{ Request::is('info') ? 'active' : '' }}" href="/info">Information</a>
-                                </li>
+                                @endisset
                             @endauth
-
-                        </li>
-
-
-
+                            <li class="nav-item">
+                                <a class="nav-link {{ Request::is('info') ? 'active' : '' }} fas fa-info" href="/info"></a>
+                            </li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -62,11 +59,11 @@
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                <a class="nav-link" href="{{ route('login') }}"><i class="fas fa-sign-in-alt"></i></a>
                             </li>
                             @if (Route::has('register'))
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                    <a class="nav-link" href="{{ route('register') }}"><i class="far fa-registered"></i></a>
                                 </li>
                             @endif
                         @else
