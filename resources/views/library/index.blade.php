@@ -30,11 +30,7 @@
 
 
                                 <a class="ml-2 btn btn-outline-primary btn-sm" href="/library/{{ $library->id }}/edit" ><i class="fas fa-pen-alt"></i>Bearbeiten</a>
-                                <form style="display: inline" action="/library/{{ $library->id }}" method="post">
-                                    @csrf
-                                    @method('DELETE')
-                                    <input class="btn btn-outline-danger btn-sm ml-2" type="submit" value="löschen">
-                                </form>
+                                <button onclick=" confirm_delete('das Medium','{{ $library->name }}', 'library', '{{ $library->id }}')" class="btn btn-outline-danger btn-sm ml-2">Löschen</button>
                                 <div class="float-right">
 
                                     {{ $library->created_at }}
@@ -55,8 +51,8 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
+    @include('_partials.deleteForm')
 </div>
 @endsection
