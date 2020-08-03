@@ -12,6 +12,7 @@
                 <div class="card-body">
                     <ul class="list-group">
                         @foreach($libraries as $library)
+
                             <li class="list-group-item">
 {{--                                Bilder nach Tags sortiert mit anzeigen--}}
                                 @if(file_exists("img/library/" . $library->id . "_thumb.jpg"))
@@ -40,11 +41,13 @@
                                     <a class="badge badge-{{ $tag->style }} " href="/library/tag/{{$tag->id}}">{{ $tag->name }}</a>
                                 @endforeach
                             </li>
+
                         @endforeach
                     </ul>
                     @auth
                     <a class="btn btn-success btn-sm mt-3" href="/library/create"><i class="fas fa-plus-circle "></i> Neues Buch anlegen</a>
                     @endauth
+
 {{--                    <div class="mt-3">--}}
 {{--                        {{ $libraries->links() }}--}}
 {{--                    </div>--}}

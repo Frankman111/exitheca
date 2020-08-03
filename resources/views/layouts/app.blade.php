@@ -7,11 +7,13 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>Exitheca</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
     <script src="{{ asset('js/custom.js') }}" defer></script>
+    <script src="{{ asset('js/src/util.js') }}" defer></script>
+
 
 
     <!-- Fonts -->
@@ -38,10 +40,10 @@
                         <li class="nav-item">
                             @auth
                                 <li class="nav-item">
-                                    <a class="nav-link {{ Request::is('home') ? 'active' : '' }}" href="/home">Home</a>
+                                    <a class="nav-link {{ Request::is('home') ? 'active' : '' }}" href="/home"><i class="fas fa-house-user"></i></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link {{ Request::is('library*') ? 'active' : '' }}" href="/library">Bücher</a>
+                                    <a class="nav-link {{ Request::is('library*') ? 'active' : '' }}" href="/library"><i class="fas fa-book"></i></a>
                                 </li>
                                 @isset(auth()->user()->role->admin)
                                 <li class="nav-item">
@@ -50,7 +52,7 @@
                                 @endisset
                             @endauth
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::is('info') ? 'active' : '' }} fas fa-info" href="/info"></a>
+                                <a class="nav-link {{ Request::is('info') ? 'active' : '' }} " href="/info"><i class="fas fa-info" ></i></a>
                             </li>
                     </ul>
 

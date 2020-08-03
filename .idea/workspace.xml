@@ -21,7 +21,10 @@
   <component name="ChangeListManager">
     <list default="true" id="b379e2e8-d072-452a-a5cc-aec188060080" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LibraryTagController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/LibraryTagController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/library/filteredByTag.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/library/filteredByTag.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/library/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/library/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/startseite.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/startseite.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -164,12 +167,13 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/js" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Exitheca\exitheca\public\js" />
       <recent name="C:\xampp\htdocs\Exitheca\exitheca\public" />
       <recent name="C:\xampp\htdocs\Exitheca\exitheca\resources\views\library" />
       <recent name="C:\xampp\htdocs\Exitheca\exitheca\resources\views" />
@@ -200,7 +204,7 @@
       <workItem from="1596197555784" duration="19819000" />
       <workItem from="1596259531596" duration="27008000" />
       <workItem from="1596346616693" duration="14754000" />
-      <workItem from="1596434199972" duration="21611000" />
+      <workItem from="1596434199972" duration="24564000" />
     </task>
     <servers />
   </component>
@@ -220,6 +224,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="2643" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596457544441">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2643" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1596457544441" />
     <state x="2610" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1596453419516">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
