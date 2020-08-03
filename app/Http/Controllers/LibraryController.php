@@ -12,6 +12,11 @@ use Intervention\Image\Facades\Image;
 class LibraryController extends Controller
 {
 
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -201,7 +206,7 @@ class LibraryController extends Controller
             if (file_exists(public_path(). '/img/library/' . $library_id . '_thumb.jpg'))
                 unlink(public_path(). '/img/library/' . $library_id . '_thumb.jpg');
             if (file_exists(public_path(). '/img/library/' . $library_id . '_large.jpg'))
-                unlink(public_path(). '/img/library/' . $library_id . '_large.jpg');
+                phpunlink(public_path(). '/img/library/' . $library_id . '_large.jpg');
             return back();
 
 
