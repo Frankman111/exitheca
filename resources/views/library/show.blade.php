@@ -40,8 +40,10 @@
                                 <i class="fa fa-search-plus"></i> Bild anklicken zum Vergrößern
                             </div>
 
-                            <a class="btn btn-success btn-sm mt-3" href="{{ URL::previous() }}"><i class="fas fa-arrow-circle-up"></i> Zurück</a>
 
+                            @if( !(strstr(URL::previous(), '/library/'))) //Bei Tags zuordnen kein zurück btn -> dreht sich sonst im Kreis
+                            <a class="btn btn-success btn-sm mt-3" href="{{ URL::previous() }}"><i class="fas fa-arrow-circle-up"></i> Zurück</a>
+                            @endif
                         </div>
                     </div>
                 </div>

@@ -21,10 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="b379e2e8-d072-452a-a5cc-aec188060080" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/library/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/library/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/library/51_large.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/library/51_large.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/library/51_thumb.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/library/51_thumb.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/library/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/library/show.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,7 +201,7 @@
       <workItem from="1596197555784" duration="19819000" />
       <workItem from="1596259531596" duration="27008000" />
       <workItem from="1596346616693" duration="14754000" />
-      <workItem from="1596434199972" duration="9557000" />
+      <workItem from="1596434199972" duration="10542000" />
     </task>
     <servers />
   </component>
