@@ -18,7 +18,7 @@
 
                                     @isset($libraries)
                                         @if($libraries->count() > 0)
-                                            <h5>Deine Hobbies</h5>
+                                            <h5>Deine Bücher</h5>
                                         @endif
                                         <ul class="list-group">
                                         @foreach($libraries as $library)
@@ -45,9 +45,9 @@
                                                 </li>
                                                 @endforeach
                                         </ul>
-                                        @endisset
+                                    @endisset
 
-                                    <a class="btn btn-success btn-sm mt-3   " href="/library/create"><i class="fas fa-plus-circle"></i> Neues Hobby anlegen</a>
+                                    <a class="btn btn-success btn-sm mt-3   " href="/library/create"><i class="fas fa-plus-circle"></i> Neues Buch anlegen</a>
                                 </div>
                             </div>
                         </div>

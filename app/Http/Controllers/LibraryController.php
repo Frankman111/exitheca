@@ -29,8 +29,20 @@ class LibraryController extends Controller
 
         $input_success = Session::get('input_success'); //Erfolgsmeldung refresh
 
-        $libraries = Library::orderBy('created_at', 'DESC')->paginate(10);
-        return view('library.index')->with(
+//        $libraries = Library::orderBy('created_at', 'DESC')->paginate(10);
+//        return view('library.index')->with(
+//            [
+//                'libraries' => $libraries,
+//                'input_success' => $input_success
+//            ]
+//        );
+
+        $libraries = Library::select()
+            ->where('user_id', auth()->id())
+            ->orderBy('updated_at', 'DESC')
+            ->get();
+
+        return view('library.filteredByTag')->with(
             [
                 'libraries' => $libraries,
                 'input_success' => $input_success
@@ -61,8 +73,8 @@ class LibraryController extends Controller
             [
                 'titel' => 'required | min: 3', //titel required, min 3 signs
                 'beschreibung' => 'required | min: 5',
-                'bild' => 'mimes:jpeg,bmp,png,jpg,gif'
-
+                'bild' => 'mimes:jpeg,bmp,png,jpg,gif',
+                'verliehen'
             ]
         );
 
@@ -71,6 +83,7 @@ class LibraryController extends Controller
             [
                 'titel' => $request['titel'],
                 'beschreibung' => $request['beschreibung'],
+                'verliehen' => $request['verliehen'],
                 'user_id' => auth()->id()
             ]
         );
@@ -164,7 +177,8 @@ class LibraryController extends Controller
         $library->update([
 
             'titel' => $request->titel,
-            'beschreibung' => $request->beschreibung
+            'beschreibung' => $request->beschreibung,
+            'verliehen' => $request['verliehen'],
 
         ]);
 
