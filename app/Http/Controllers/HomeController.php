@@ -28,9 +28,10 @@ class HomeController extends Controller
 
         $input_success = Session::get('input_success');
 
+
         $libraries = Library::select()
             ->where('user_id', auth()->id())
-            ->orderBy('updated_at', 'DESC')
+            ->orderBy('verliehen', 'DESC')
             ->get();
 
 

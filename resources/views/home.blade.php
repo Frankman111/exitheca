@@ -16,12 +16,14 @@
                                     @endif
                                 </div>
 
-                                    @isset($libraries)
+
                                         @if($libraries->count() > 0)
-                                            <h5>Deine Bücher</h5>
+
+                                            <h5>Verliehenes</h5>
                                         @endif
                                         <ul class="list-group">
                                         @foreach($libraries as $library)
+                                                @isset($library->verliehen)
                                                 <li class="list-group-item">
                                                     @if(file_exists("img/library/" . $library->id . "_thumb.jpg"))
                                                         <a class="mr-1" title="Details anzeigen" href="/library/{{ $library->id }}">
@@ -43,9 +45,10 @@
                                                         <a class="badge badge-{{$tag->style}}" href="/library/tag/{{ $tag->id }}">{{ $tag->name }}</a>
                                                     @endforeach
                                                 </li>
+                                                @endisset
                                                 @endforeach
                                         </ul>
-                                    @endisset
+
 
                                     <a class="btn btn-success btn-sm mt-3   " href="/library/create"><i class="fas fa-plus-circle"></i> Neues Buch anlegen</a>
                                 </div>

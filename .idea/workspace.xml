@@ -21,12 +21,10 @@
   <component name="ChangeListManager">
     <list default="true" id="b379e2e8-d072-452a-a5cc-aec188060080" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LibraryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/LibraryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Library.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Library.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TagController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TagController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/library/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/library/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/library/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/library/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/library/filteredByTag.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/library/filteredByTag.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/library/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/library/show.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -205,7 +203,7 @@
       <workItem from="1596197555784" duration="19819000" />
       <workItem from="1596259531596" duration="27008000" />
       <workItem from="1596346616693" duration="14754000" />
-      <workItem from="1596434199972" duration="14521000" />
+      <workItem from="1596434199972" duration="18737000" />
     </task>
     <servers />
   </component>
@@ -225,10 +223,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2610" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1596358217985">
+    <state x="2610" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1596453419516">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2610" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1596358217985" />
+    <state x="2610" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1596453419516" />
     <state width="1877" height="114" key="GridCell.Tab.0.bottom" timestamp="1596374536422">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>

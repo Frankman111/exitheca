@@ -14,6 +14,13 @@
                         <div class="col-md-9">
                             <p><b>{{ $library->titel }}</b></p>
                             <p>{{ $library->beschreibung }}</p>
+
+
+                           @isset($library->verliehen)
+                               <b>Verliehen an:</b>
+                            <p>{{ $library->verliehen }}</p>
+                            @endisset
+
                             @if($library->tags->count()>0)
                             <p>
                                 <b>Verknüpfte Tags:</b> (klicken zum entfernen)<br>

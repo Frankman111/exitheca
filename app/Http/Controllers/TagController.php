@@ -11,6 +11,7 @@ class TagController extends Controller
         public function __construct()
     {
         $this->middleware('auth');
+        $this->middleware('admin');
 
     }
 
@@ -24,6 +25,9 @@ class TagController extends Controller
     {
         $tags = Tag::all();
         return view('tag.index')->with('tags', $tags);
+
+
+
     }
 
     /**

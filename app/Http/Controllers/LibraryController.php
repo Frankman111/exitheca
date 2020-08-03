@@ -29,13 +29,7 @@ class LibraryController extends Controller
 
         $input_success = Session::get('input_success'); //Erfolgsmeldung refresh
 
-//        $libraries = Library::orderBy('created_at', 'DESC')->paginate(10);
-//        return view('library.index')->with(
-//            [
-//                'libraries' => $libraries,
-//                'input_success' => $input_success
-//            ]
-//        );
+
 
         $libraries = Library::select()
             ->where('user_id', auth()->id())
@@ -74,7 +68,7 @@ class LibraryController extends Controller
                 'titel' => 'required | min: 3', //titel required, min 3 signs
                 'beschreibung' => 'required | min: 5',
                 'bild' => 'mimes:jpeg,bmp,png,jpg,gif',
-                'verliehen'
+                'verliehen' => 'max: 25'
             ]
         );
 
@@ -161,7 +155,8 @@ class LibraryController extends Controller
             [
                 'titel' => 'required | min: 3', //titel required, min 3 signs
                 'beschreibung' => 'required | min: 5',
-                'bild' => 'mimes:jpeg,bmp,png,jpg,gif'
+                'bild' => 'mimes:jpeg,bmp,png,jpg,gif',
+                'verliehen' => 'max: 25'
 
             ]
         );
