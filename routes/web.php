@@ -32,9 +32,12 @@ Route::resource('tag', 'TagController');
 
 Route::get('/library/tag/{tag_id}', 'LibraryTagController@getFilteredLibraries')->name('library_tag');
 
-Route::get('/library/{library_id}/tag/{tag_id}/attach', 'LibraryTagController@attachTag');
-
-Route::get('/library/{library_id}/tag/{tag_id}/detach','LibraryTagController@detachTag');
+//Fremdzugriff von Tags unterbinden
+Route::get('/library/{library_id}/tag/{tag_id}/attach', 'LibraryTagController@attachTag')
+->name('library_tag_attach')->middleware('auth');
+//Fremdzugriff von Tags unterbinden
+Route::get('/library/{library_id}/tag/{tag_id}/detach','LibraryTagController@detachTag')
+->name('library_tag_detach')->middleware('auth');;
 
 //Bilder löschen
 Route::get('/delete-image/library/{library_id}','LibraryController@deleteImages');

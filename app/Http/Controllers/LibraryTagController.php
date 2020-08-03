@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Library;
 use Illuminate\Http\Request;
 use App\Tag;
+use Illuminate\Support\Facades\Gate;
 
 class LibraryTagController extends Controller
 {
@@ -33,6 +34,11 @@ class LibraryTagController extends Controller
     public function attachTag($library_id, $tag_id){
 
         $library = Library::find($library_id);
+
+        if (Gate::denies('connect_libraryTag', $library)){
+            abort(403, 'Das Buch gehört dir nicht');
+        }
+
         $tag = Tag::find($tag_id);
         $library -> tags()->attach($tag_id);
 
@@ -43,6 +49,11 @@ class LibraryTagController extends Controller
     public function detachTag($library_id, $tag_id){
 
         $library = Library::find($library_id);
+
+        if (Gate::denies('connect_libraryTag', $library)){
+            abort(403, 'Das Buch gehört dir nicht');
+        }
+
         $tag = Tag::find($tag_id);
         $library -> tags()->detach($tag_id);
 

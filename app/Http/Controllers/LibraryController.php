@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Session;
 use Intervention\Image\Facades\Image;
+use Illuminate\Support\Facades\Gate;
 
 class LibraryController extends Controller
 {
@@ -121,6 +122,14 @@ class LibraryController extends Controller
      */
     public function edit(Library $library)
     {
+        if (auth()->guest()){
+
+            abort(403);
+        }
+
+        abort_unless($library->user_id === auth()->id() || auth()->user()->rolle === 'admin', 403);
+
+
         return view('library.edit')->with('library', $library);
     }
 
@@ -133,6 +142,8 @@ class LibraryController extends Controller
      */
     public function update(Request $request, Library $library)
     {
+        abort_unless(Gate::allows('update', $library), 403);
+
         $request->validate(
             [
                 'titel' => 'required | min: 3', //titel required, min 3 signs
@@ -170,6 +181,13 @@ class LibraryController extends Controller
      */
     public function destroy(Library $library)
     {
+        if (auth()->guest()){
+
+            abort(403);
+        }
+
+        abort_unless(Gate::allows('delete', $library), 403);
+
 
         $old_titel = $library->titel; // save the old name
         $library->delete();

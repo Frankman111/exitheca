@@ -37,23 +37,22 @@
                             @auth
                                 <a class="nav-link {{ Request::is('home') ? 'active' : '' }}" href="/home">Home</a>
                             @endauth
-{{--                            @guest--}}
-{{--                                <a class="nav-link {{ Request::is('/') ? 'active' : '' }}" href="/">Startseite</a>--}}
-{{--                            @endguest--}}
-                            </li>
-                            @auth
-                            <li class="nav-item">
-                                <a class="nav-link {{ Request::is('library*') ? 'active' : '' }}" href="/library">Bücher</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link {{ Request::is('tag*') ? 'active' : '' }}" href="/tag">Tags</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link {{ Request::is('info') ? 'active' : '' }}" href="/info">Information</a>
-                            </li>
-                            @endauth
+                            @guest
+                                <a class="nav-link {{ Request::is('/') ? 'active' : '' }}" href="/">Startseite</a>
+                            @endguest
+                        </li>
 
-                        </ul>
+                        <li class="nav-item">
+                            <a class="nav-link {{ Request::is('library*') ? 'active' : '' }}" href="/library">Bücher</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {{ Request::is('tag*') ? 'active' : '' }}" href="/tag">Tags</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {{ Request::is('info') ? 'active' : '' }}" href="/info">Information</a>
+                        </li>
+
+                    </ul>
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
