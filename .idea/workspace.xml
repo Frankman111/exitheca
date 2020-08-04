@@ -21,11 +21,11 @@
   <component name="ChangeListManager">
     <list default="true" id="b379e2e8-d072-452a-a5cc-aec188060080" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LibraryTagController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/LibraryTagController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/library/filteredByTag.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/library/filteredByTag.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/library/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/library/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/startseite.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/startseite.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +35,10 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="PRINT_LINE_NUMBERS" value="true" />
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/../exitheca\exportToHTML" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -204,7 +208,8 @@
       <workItem from="1596197555784" duration="19819000" />
       <workItem from="1596259531596" duration="27008000" />
       <workItem from="1596346616693" duration="14754000" />
-      <workItem from="1596434199972" duration="24564000" />
+      <workItem from="1596434199972" duration="24826000" />
+      <workItem from="1596528173212" duration="2905000" />
     </task>
     <servers />
   </component>

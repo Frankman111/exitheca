@@ -39,7 +39,8 @@ class HomeController extends Controller
         return view('home')->with(
             [
                 'libraries' => $libraries,
-                'input_success' => $input_success
+                'input_success' => $input_success,
+
             ]
         );
     }

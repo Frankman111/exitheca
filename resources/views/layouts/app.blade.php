@@ -100,10 +100,10 @@
                     </div>
                 </div>
             @endisset
-            @isset($input_hinweis)
+            @isset($input_hint)
                 <div class="container">
                     <div class="alert alert-warning">
-                        {!! $input_hinweis !!}
+                        {!! $input_hint !!}
                     </div>
                 </div>
             @endisset

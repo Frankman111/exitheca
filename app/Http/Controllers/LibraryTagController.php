@@ -13,9 +13,8 @@ class LibraryTagController extends Controller
     {
         $this->middleware('auth');
 
+
     }
-
-
 
     public function getFilteredLibraries($tag_id){
 

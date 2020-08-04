@@ -17,7 +17,7 @@
                                 </div>
                                         @if($libraries->count() > 0)
 
-                                            <h5>Verliehenes</h5>
+                                            <h5>Verliehen:</h5>
                                         @endif
                                         <ul class="list-group">
                                         @foreach($libraries as $library)
@@ -27,17 +27,13 @@
                                                         <a class="mr-1" title="Details anzeigen" href="/library/{{ $library->id }}">
                                                             <img src="/img/library/{{ $library->id }}_thumb.jpg" alt="thumb"></a>
                                                     @endif
-
+                                                    <span class="float-right">{{$library->updated_at}}</span>
                                                     {{ $library->titel }}
                                                         <a class="ml-2" href="/library/{{ $library->id }}">Detailansicht</a>
 
                                                     <a class="ml-2 btn btn-sm btn-outline-primary"
                                                        href="/library/{{ $library->id }}/edit"><i class="fas fa-edit"></i> Bearbeiten</a>
-                                                    <form style="display: inline;" action="/library/{{ $library->id }}" method="post">
-                                                        @csrf
-                                                        @method('DELETE')
-                                                        <input class="btn btn-outline-danger btn-sm ml-2" type="submit" value="Löschen">
-                                                    </form>
+
                                                         <br>
                                                     @foreach($library->tags as $tag)
                                                         <a class="badge badge-{{$tag->style}}" href="/library/tag/{{ $tag->id }}">{{ $tag->name }}</a>

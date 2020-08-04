@@ -25,21 +25,19 @@
 
 
 
-                                <a class="ml-2 btn btn-outline-primary btn-sm" href="/library/{{ $library->id }}/edit" ><i class="fas fa-pen-alt"></i>Bearbeiten</a>
+                                <a class="ml-2 btn btn-outline-primary btn-sm float-right" href="/library/{{ $library->id }}/edit" ><i class="fas fa-pen-alt"></i>Bearbeiten</a>
                                 <form style="display: inline" action="/library/{{ $library->id }}" method="post">
                                     @csrf
                                     @method('DELETE')
-                                    <input class="btn btn-outline-danger btn-sm ml-2" type="submit" value="löschen">
+                                    <input class="btn btn-outline-danger btn-sm float-right" type="submit" value="löschen">
                                 </form>
-                                <div class="float-right">
 
-                                    {{ $library->created_at }}
-                                </div>
-
+                                <div>
                                 {{--Tags angeben bei den Einträgen --}}
                                 @foreach($library->tags as $tag)
-                                    <a class="badge badge-{{ $tag->style }} " href="/library/tag/{{$tag->id}}">{{ $tag->name }}</a>
+                                    <span class="badge badge-{{ $tag->style }} ">{{ $tag->name }}</span>
                                 @endforeach
+                                </div>
                             </li>
 
                         @endforeach
