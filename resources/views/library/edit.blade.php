@@ -22,7 +22,7 @@
                             </div>
                             <div class="mb-2">
                                 @if(file_exists("img/library/" . $library->id . "_large.jpg"))
-                                        <img style="max-width: 400px; max-height: 300px;"  src="/img/library/{{ $library->id }}_large.jpg" alt="large"></a>
+                                        <img style="max-width: 400px; max-height: 300px;"  src="/img/library/{{ $library->id }}_large.jpg" alt="large">
                                         <div class="float-right">
                                             <a class="btn btn-sm btn-outline-danger" href="/delete-image/library/{{ $library->id  }}">Bild löschen</a>
                                         </div>
@@ -42,7 +42,13 @@
                             <div class="form-group">
                                 <label for="titel">Verliehen</label>
                                 <input type="text" class="form-control {{ $errors->has('verliehen') ? 'border-danger' : '' }}" id="verliehen" name="verliehen" value="{{$library->verliehen}}">
+                                <div class="form-group form-control {{ $errors->has('medium') ? 'border-danger' : '' }}">
 
+                                    <label><strong>Medium :</strong></label><br>
+                                    <label><input type="checkbox" name="medium" value="Blu-Ray"> Blu-Ray</label>
+                                    <label><input type="checkbox" name="medium" value="DVD"> DVD</label>
+                                    <label><input type="checkbox" name="medium" value="Buch"> Buch</label>
+                                </div>
                             </div>
 
                             <input class="btn btn-primary mt-4" type="submit" value="absenden">

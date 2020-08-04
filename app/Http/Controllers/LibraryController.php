@@ -68,7 +68,8 @@ class LibraryController extends Controller
                 'titel' => 'required | min: 3', //titel required, min 3 signs
                 'beschreibung' => 'required | min: 5',
                 'bild' => 'mimes:jpeg,bmp,png,jpg,gif',
-                'verliehen' => 'max: 25'
+                'verliehen' => 'max: 25',
+                'medium' => 'required | max: 25'
             ]
         );
 
@@ -78,6 +79,7 @@ class LibraryController extends Controller
                 'titel' => $request['titel'],
                 'beschreibung' => $request['beschreibung'],
                 'verliehen' => $request['verliehen'],
+                'medium' => $request['medium'],
                 'user_id' => auth()->id()
             ]
         );
@@ -156,7 +158,8 @@ class LibraryController extends Controller
                 'titel' => 'required | min: 3', //titel required, min 3 signs
                 'beschreibung' => 'required | min: 5',
                 'bild' => 'mimes:jpeg,bmp,png,jpg,gif',
-                'verliehen' => 'max: 25'
+                'verliehen' => 'max: 25',
+                'medium' => 'required | max: 25'
 
             ]
         );
@@ -174,6 +177,7 @@ class LibraryController extends Controller
             'titel' => $request->titel,
             'beschreibung' => $request->beschreibung,
             'verliehen' => $request['verliehen'],
+            'medium' => $request['medium']
 
         ]);
 
