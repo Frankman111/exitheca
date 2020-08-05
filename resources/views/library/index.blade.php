@@ -23,7 +23,7 @@
 
                                 <a class=" ml-2" href="/library/{{ $library->id }}">Detail</a>
                                  <a class="ml-2 btn btn-outline-primary btn-sm" href="/library/{{ $library->id }}/edit" ><i class="fas fa-pen-alt"></i>Bearbeiten</a>
-                                <button onclick=" confirm_delete('das Medium','{{ $library->name }}', 'library', '{{ $library->id }}')" class="btn btn-outline-danger btn-sm ml-2">Löschen</button>
+                                <button onclick=" confirm_delete('Das Medium','{{ $library->name }}', 'library', '{{ $library->id }}')" class="btn btn-outline-danger btn-sm ml-2">Löschen</button>
 
                                 <br>{{--Tags angeben bei den Einträgen --}}
                                 @foreach($library->tags as $tag)
@@ -41,7 +41,8 @@
                 </div>
             </div>
         </div>
+        @include('_partials.deleteForm')
     </div>
-    @include('_partials.deleteForm')
+
 </div>
 @endsection
