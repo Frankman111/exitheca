@@ -29,11 +29,21 @@
                                 <textarea class="form-control {{ $errors->has('beschreibung') ? 'border-danger' : '' }}" id="beschreibung" name="beschreibung" rows="5">{{ old('beschreibung') }}</textarea>
                                 <small class="form-text text-danger">{!! $errors->first('beschreibung') !!}</small>
                             </div>
-                            <div class="form-group">
+                            <div class="form-group d-flex flex-row">
                                 <label for="titel">Verliehen</label>
-                                <input type="text" class="form-control {{ $errors->has('verliehen') ? 'border-danger' : '' }}" id="verliehen" name="verliehen" value="">
+                                <input type="text" class="form-control {{ $errors->has('verliehen') ? 'border-danger' : '' }}" id="verliehen" name="verliehen" value="{{old('verliehen')}}">
+
+                            <div>
+
+                                <label for="medium">Medium :</label>
+                                <label><input type="checkbox" name="medium" value="Blu-Ray"> Blu-Ray</label>
+                                <label><input type="checkbox" name="medium" value="DVD"> DVD</label>
+                                <label><input type="checkbox" name="medium" value="Buch"> Buch</label>
+                            </div>
 
                             </div>
+
+
 
                             <input class="btn btn-primary mt-4" type="submit" value="absenden">
 

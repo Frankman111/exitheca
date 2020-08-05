@@ -42,9 +42,10 @@
                                     <a href="/img/library/{{ $library->id }}_large.jpg" data-lightbox="{{ $library->id }}_large.jpg" data-title="{{ $library->titel }}">
                                         <img class="img-fluid" src="/img/library/{{ $library->id }}_large.jpg" alt="">
                                     </a>
+                                    <i class="fa fa-search-plus"></i> Bild anklicken zum Vergrößern
                                 @endif
 
-                                <i class="fa fa-search-plus"></i> Bild anklicken zum Vergrößern
+
                             </div>
 
 

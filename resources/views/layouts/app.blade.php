@@ -45,12 +45,12 @@
                                 <li class="nav-item">
                                     <a class="nav-link {{ Request::is('library*') ? 'active' : '' }}" href="/library"><i class="fas fa-book"></i></a>
                                 </li>
-                                @isset(auth()->user()->role->admin)
-                                <li class="nav-item">
-                                    <a class="nav-link {{ Request::is('tag*') ? 'active' : '' }}" href="/tag">Tags</a>
-                                </li>
-                                @endisset
                             @endauth
+{{--                            @isset(auth()->user()->role->admin)--}}
+                            <li class="nav-item">
+                                <a class="nav-link {{ Request::is('tag*') ? 'active' : '' }}" href="/tag">Tags</a>
+                            </li>
+{{--                            @endisset--}}
                             <li class="nav-item">
                                 <a class="nav-link {{ Request::is('info') ? 'active' : '' }} " href="/info"><i class="fas fa-info" ></i></a>
                             </li>

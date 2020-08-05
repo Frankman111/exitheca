@@ -22,7 +22,7 @@
 
                                 {{$library->titel}}
                                 <a class=" ml-2" href="/library/{{ $library->id }}">Detail</a>
-
+                                {{$library->medium}}
 
 
                                 <a class="ml-2 btn btn-outline-primary btn-sm float-right" href="/library/{{ $library->id }}/edit" ><i class="fas fa-pen-alt"></i>Bearbeiten</a>

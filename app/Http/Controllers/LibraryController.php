@@ -9,6 +9,7 @@ use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Session;
 use Intervention\Image\Facades\Image;
 use Illuminate\Support\Facades\Gate;
+use Illuminate\Support\Facades\Auth;
 
 class LibraryController extends Controller
 {
@@ -16,6 +17,8 @@ class LibraryController extends Controller
     public function __construct()
     {
         $this->middleware('auth');
+        $this->middleware('admin');
+
     }
 
     /**
@@ -68,7 +71,8 @@ class LibraryController extends Controller
                 'titel' => 'required | min: 3', //titel required, min 3 signs
                 'beschreibung' => 'required | min: 5',
                 'bild' => 'mimes:jpeg,bmp,png,jpg,gif',
-                'verliehen' => 'max: 25'
+                'verliehen' => 'max: 25',
+                'medium' => 'max: 25'
             ]
         );
 
@@ -78,6 +82,7 @@ class LibraryController extends Controller
                 'titel' => $request['titel'],
                 'beschreibung' => $request['beschreibung'],
                 'verliehen' => $request['verliehen'],
+                'medium' => $request['medium'],
                 'user_id' => auth()->id()
             ]
         );
@@ -156,7 +161,8 @@ class LibraryController extends Controller
                 'titel' => 'required | min: 3', //titel required, min 3 signs
                 'beschreibung' => 'required | min: 5',
                 'bild' => 'mimes:jpeg,bmp,png,jpg,gif',
-                'verliehen' => 'max: 25'
+                'verliehen' => 'max: 25',
+                'medium' => 'max: 25'
 
             ]
         );
@@ -174,6 +180,7 @@ class LibraryController extends Controller
             'titel' => $request->titel,
             'beschreibung' => $request->beschreibung,
             'verliehen' => $request['verliehen'],
+            'medium' => $request['medium']
 
         ]);
 
