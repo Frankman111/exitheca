@@ -24,19 +24,8 @@
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LibraryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/LibraryController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LibraryTagController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/LibraryTagController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TagController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TagController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Library.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Library.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/library/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/library/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/library/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/library/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/library/filteredByTag.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/library/filteredByTag.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/library/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/library/show.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,16 +176,16 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\Exitheca\exitheca\public\img" />
-      <recent name="C:\xampp\htdocs\Exitheca\exitheca\resources\views\library" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\Exitheca\exitheca\public\js" />
       <recent name="C:\xampp\htdocs\Exitheca\exitheca\public" />
       <recent name="C:\xampp\htdocs\Exitheca\exitheca\resources\views\library" />
       <recent name="C:\xampp\htdocs\Exitheca\exitheca\resources\views" />
       <recent name="C:\xampp\htdocs\Exitheca\exitheca\resources\lang\de" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Exitheca\exitheca\public\img" />
+      <recent name="C:\xampp\htdocs\Exitheca\exitheca\resources\views\library" />
     </key>
   </component>
   <component name="RunManager">
