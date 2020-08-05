@@ -20,17 +20,11 @@
                                         <img src="/img/library/{{ $library->id }}_thumb.jpg" alt="thumb"></a>
                                 @endif
                                 {{$library->titel}}
+
                                 <a class=" ml-2" href="/library/{{ $library->id }}">Detail</a>
-
-
-
-                                <a class="ml-2 btn btn-outline-primary btn-sm" href="/library/{{ $library->id }}/edit" ><i class="fas fa-pen-alt"></i>Bearbeiten</a>
+                                 <a class="ml-2 btn btn-outline-primary btn-sm" href="/library/{{ $library->id }}/edit" ><i class="fas fa-pen-alt"></i>Bearbeiten</a>
                                 <button onclick=" confirm_delete('das Medium','{{ $library->name }}', 'library', '{{ $library->id }}')" class="btn btn-outline-danger btn-sm ml-2">Löschen</button>
-                                <div class="float-right">
 
-                                    {{ $library->created_at }}
-
-                                </div>
                                 <br>{{--Tags angeben bei den Einträgen --}}
                                 @foreach($library->tags as $tag)
                                     <a class="badge badge-{{ $tag->style }}" href="/library/tag/{{$tag->id}}">{{ $tag->name }}</a>
@@ -41,9 +35,9 @@
                     @auth
                     <a class="btn btn-success btn-sm mt-3" href="/library/create"><i class="fas fa-plus-circle "></i> Neues Buch anlegen</a>
                     @endauth
-                    <div class="mt-3">
-                        {{ $libraries->links() }}
-                    </div>
+{{--                    <div class="mt-3">--}}
+{{--                        {{ $library->links() }}--}}
+{{--                    </div>--}}
                 </div>
             </div>
         </div>

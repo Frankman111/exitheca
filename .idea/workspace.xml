@@ -22,10 +22,13 @@
     <list default="true" id="b379e2e8-d072-452a-a5cc-aec188060080" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LibraryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/LibraryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Library.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Library.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/library/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/library/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/library/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/library/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LibraryTagController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/LibraryTagController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TagController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TagController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/library/filteredByTag.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/library/filteredByTag.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/library/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/library/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/tag/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/tag/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/tag/show.blade.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,6 +213,7 @@
       <workItem from="1596346616693" duration="14754000" />
       <workItem from="1596434199972" duration="24826000" />
       <workItem from="1596528173212" duration="2905000" />
+      <workItem from="1596609888340" duration="4912000" />
     </task>
     <servers />
   </component>
@@ -233,10 +237,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2643" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1596457544441" />
-    <state x="2610" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1596453419516">
+    <state x="2610" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1596612015553">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2610" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1596453419516" />
+    <state x="2610" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1596612015553" />
     <state width="1877" height="114" key="GridCell.Tab.0.bottom" timestamp="1596374536422">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>

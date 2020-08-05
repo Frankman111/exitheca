@@ -3,15 +3,17 @@
 namespace App\Http\Controllers;
 
 
+use App\Library;
 use App\Tag;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
 
 class TagController extends Controller
 {
         public function __construct()
     {
         $this->middleware('auth');
-        $this->middleware('admin');
+       // $this->middleware('admin');
 
     }
 
@@ -50,7 +52,7 @@ class TagController extends Controller
     {
         $request->validate(
             [
-                'name' => 'required | min: 3', //style required, min 3 signs
+                'name' => 'required | min: 3',
                 'style' => 'required'
 
             ]
@@ -69,6 +71,7 @@ class TagController extends Controller
             'input_success' => 'Der Tag <b>'  .$tag->name. '</b> wurde angelegt.'
         ]);
     }
+
 
     /**
      * Display the specified resource.

@@ -29,12 +29,11 @@ class LibraryController extends Controller
 
         $input_success = Session::get('input_success'); //Erfolgsmeldung refresh
 
-
-
-        $libraries = Library::select()
+         $libraries = Library::select()
             ->where('user_id', auth()->id())
             ->orderBy('updated_at', 'DESC')
             ->get();
+
 
         return view('library.filteredByTag')->with(
             [
