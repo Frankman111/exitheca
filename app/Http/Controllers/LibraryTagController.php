@@ -19,6 +19,13 @@ class LibraryTagController extends Controller
 
     public function getFilteredLibraries($tag_id){
 
+
+
+//        $tag_id = Library::select()
+//            ->where('user_id', auth()->id())
+//            ->orderBy('updated_at', 'DESC')
+//            ->get();
+
         $tag = new Tag();
         $filter = $tag::findOrFail($tag_id);
         $filteredlibraries = $filter->filteredLibraries()->paginate(10);
@@ -52,7 +59,7 @@ class LibraryTagController extends Controller
         $library = Library::find($library_id);
 
         if (Gate::denies('connect_libraryTag', $library)){
-            abort(403, 'Das Buch gehört dir nicht');
+            abort(403, 'Das Medium gehört dir nicht');
         }
 
         $tag = Tag::find($tag_id);

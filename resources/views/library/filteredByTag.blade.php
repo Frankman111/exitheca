@@ -14,7 +14,7 @@
                         @foreach($libraries as $library)
 
                             <li class="list-group-item">
-{{--                                Bilder nach Tags sortiert mit anzeigen--}}
+
                                 @if(file_exists("img/library/" . $library->id . "_thumb.jpg"))
                                     <a class="mr-1" title="Details anzeigen" href="/library/{{ $library->id }}">
                                         <img src="/img/library/{{ $library->id }}_thumb.jpg" alt="thumb"></a>
@@ -22,6 +22,8 @@
 
                                 {{$library->titel}}
                                 <a class=" ml-2" href="/library/{{ $library->id }}">Detail</a>
+                                {{$library->medium}}
+
                                 {{$library->medium}}
 
 
@@ -35,7 +37,7 @@
                                 <div>
                                 {{--Tags angeben bei den Einträgen --}}
                                 @foreach($library->tags as $tag)
-                                    <span class="badge badge-{{ $tag->style }} ">{{ $tag->name }}</span>
+                                    <a class="badge badge-{{ $tag->style }}" href="/library/tag/{{$tag->id}}">{{ $tag->name }}</a>
                                 @endforeach
                                 </div>
                             </li>
@@ -45,9 +47,8 @@
                     @auth
                     <a class="btn btn-success btn-sm mt-3" href="/library/create"><i class="fas fa-plus-circle "></i> Neues Buch anlegen</a>
                     @endauth
-
 {{--                    <div class="mt-3">--}}
-{{--                        {{ $libraries->links() }}--}}
+{{--                        {{ $library->links() }}--}}
 {{--                    </div>--}}
                 </div>
             </div>
