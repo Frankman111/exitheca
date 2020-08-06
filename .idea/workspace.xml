@@ -22,11 +22,9 @@
     <list default="true" id="b379e2e8-d072-452a-a5cc-aec188060080" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/info.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/info.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/library/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/library/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/library/filteredByTag.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/library/filteredByTag.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/library/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/library/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/tag/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/tag/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/startseite.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/startseite.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,16 +175,17 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Exitheca\exitheca\public\img\carousel" />
+      <recent name="C:\xampp\htdocs\Exitheca\exitheca\public\img" />
+      <recent name="C:\xampp\htdocs\Exitheca\exitheca\resources\views\library" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\Exitheca\exitheca\public\js" />
       <recent name="C:\xampp\htdocs\Exitheca\exitheca\public" />
       <recent name="C:\xampp\htdocs\Exitheca\exitheca\resources\views\library" />
       <recent name="C:\xampp\htdocs\Exitheca\exitheca\resources\views" />
       <recent name="C:\xampp\htdocs\Exitheca\exitheca\resources\lang\de" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\Exitheca\exitheca\public\img" />
-      <recent name="C:\xampp\htdocs\Exitheca\exitheca\resources\views\library" />
     </key>
   </component>
   <component name="RunManager">
