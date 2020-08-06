@@ -27,7 +27,7 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
-                <a class="navbar-brand fas fa-home" href="{{ url('/') }}">
+                <a class="navbar-brand fas fa-home" href="{{ url('/') }}" data-toggle="tooltip" data-placement="bottom" title="Startseite">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -40,13 +40,13 @@
                         <li class="nav-item">
                             @auth
                                 <li class="nav-item">
-                                    <a class="nav-link {{ Request::is('home') ? 'active' : '' }}" href="/home"><i class="fas fa-house-user"></i></a>
+                                    <a class="nav-link {{ Request::is('home') ? 'active' : '' }}" href="/home" data-toggle="tooltip" data-placement="bottom" title="Meine Seite"><i class="fas fa-house-user"></i></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link {{ Request::is('library*') ? 'active' : '' }}" href="/library"><i class="fas fa-warehouse"></i></a>
+                                    <a class="nav-link {{ Request::is('library*') ? 'active' : '' }}" href="/library" data-toggle="tooltip" data-placement="bottom" title="Meine Medien"><i class="fas fa-warehouse"></i></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link {{ Request::is('tag*') ? 'active' : '' }}" href="/tag"><i class="fas fa-tags"></i></a>
+                                    <a class="nav-link {{ Request::is('tag*') ? 'active' : '' }}" href="/tag" data-toggle="tooltip" data-placement="bottom" title="Tags hinzufügen"><i class="fas fa-tags"></i></a>
                                 </li>
                             @endauth
 
@@ -55,7 +55,7 @@
 
 
                             <li class="nav-item">
-                                <a class="nav-link {{ Request::is('info') ? 'active' : '' }} " href="/info"><i class="fas fa-info" ></i></a>
+                                <a class="nav-link {{ Request::is('info') ? 'active' : '' }} " href="/info" data-toggle="tooltip" data-placement="top" title="Information"><i class="fas fa-info" ></i></a>
                             </li>
                     </ul>
 

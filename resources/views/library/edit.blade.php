@@ -7,7 +7,7 @@
         <div class="row justify-content-center">
             <div class="col-md-12">
                 <div class="card">
-                    <div class="card-header">Buch bearbeiten</div>
+                    <div class="card-header">Medium bearbeiten</div>
 
                     <div class="card-body">
 
@@ -22,7 +22,7 @@
                             </div>
                             <div class="mb-2">
                                 @if(file_exists("img/library/" . $library->id . "_large.jpg"))
-                                        <img style="max-width: 400px; max-height: 300px;"  src="/img/library/{{ $library->id }}_large.jpg" alt="large"></a>
+                                        <img style="max-width: 400px; max-height: 300px;"  src="/img/library/{{ $library->id }}_large.jpg" alt="large">
                                         <div class="float-right">
                                             <a class="btn btn-sm btn-outline-danger" href="/delete-image/library/{{ $library->id  }}">Bild löschen</a>
                                         </div>

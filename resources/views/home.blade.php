@@ -44,7 +44,7 @@
                                         </ul>
 
 
-                                    <a class="btn btn-success btn-sm mt-3   " href="/library/create"><i class="fas fa-plus-circle"></i></a>
+                                    <a class="btn btn-success btn-sm mt-3   " href="/library/create" data-toggle="tooltip" data-placement="top" title="Medium hinzufügen"><i class="fas fa-plus-circle"></i></a>
                                 </div>
                             </div>
                         </div>
