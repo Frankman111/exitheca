@@ -7,7 +7,7 @@
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="card">
-                <div class="card-header">Buch Details</div>
+                <div class="card-header">Medien Details</div>
 
                 <div class="card-body">
                     <div class="row">

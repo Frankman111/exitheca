@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Meine Bücher')
+@section('title', 'Meine Medien')
 
 @section('content')
     <div class="container">
@@ -39,17 +39,15 @@
                                 <textarea class="form-control {{ $errors->has('beschreibung') ? 'border-danger' : '' }}" id="beschreibung" name="beschreibung" rows="5">{{ old('beschreibung') ?? $library->beschreibung }}</textarea>
                                 <small class="form-text text-danger">{!! $errors->first('beschreibung') !!}</small>
                             </div>
-                            <div class="form-group d-flex flex-row">
-                                <label for="titel">Verliehen an</label>
-                                <input type="text" class="form-control {{ $errors->has('verliehen') ? 'border-danger' : '' }}" id="verliehen" name="verliehen" value="{{$library->verliehen}}">
-                            <div class="form-group form-control {{ $errors->has('medium') ? 'border-danger' : '' }}">
-
-                                <strong>Medium :</strong><br>
-                                <label><input type="checkbox" name="medium" value="Blu-Ray"> Blu-Ray</label>
-                                <label><input type="checkbox" name="medium" value="DVD"> DVD</label>
-                                <label><input type="checkbox" name="medium" value="Buch"> Buch</label>
-                            </div>
-
+                            <div class="form-group">
+                                <label for="verliehen">Verliehen an:</label>
+                                <input type="text" class="form-control {{ $errors->has('verliehen') ? 'border-danger' : '' }}" id="verliehen" name="verliehen" value="{{old('verliehen')}}">
+                                <div class="mt-3">
+                                    <label class="mr-3"  for="medium">Medium:</label>
+                                    <label class="mr-3"><input type="checkbox" name="medium" value="Blu-Ray"> Blu-Ray</label>
+                                    <label class="mr-3"><input type="checkbox" name="medium" value="DVD"> DVD</label>
+                                    <label><input type="checkbox" name="medium" value="Buch"> Buch</label>
+                                </div>
                             </div>
 
                             <input class="btn btn-primary mt-4" type="submit" value="absenden">

@@ -43,10 +43,10 @@
                                     <a class="nav-link {{ Request::is('home') ? 'active' : '' }}" href="/home"><i class="fas fa-house-user"></i></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link {{ Request::is('library*') ? 'active' : '' }}" href="/library"><i class="fas fa-book"></i></a>
+                                    <a class="nav-link {{ Request::is('library*') ? 'active' : '' }}" href="/library"><i class="fas fa-warehouse"></i></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link {{ Request::is('tag*') ? 'active' : '' }}" href="/tag">Tags</a>
+                                    <a class="nav-link {{ Request::is('tag*') ? 'active' : '' }}" href="/tag"><i class="fas fa-tags"></i></a>
                                 </li>
                             @endauth
 
