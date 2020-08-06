@@ -21,11 +21,12 @@
   <component name="ChangeListManager">
     <list default="true" id="b379e2e8-d072-452a-a5cc-aec188060080" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LibraryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/LibraryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LibraryTagController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/LibraryTagController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TagController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TagController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/custom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/custom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_04_173955_medium_in_libraries_table.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/library/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/library/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/library/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/library/show.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,6 +212,8 @@
       <workItem from="1596434199972" duration="24826000" />
       <workItem from="1596528173212" duration="2905000" />
       <workItem from="1596625878713" duration="2184000" />
+      <workItem from="1596635141202" duration="76000" />
+      <workItem from="1596725409218" duration="1064000" />
     </task>
     <servers />
   </component>

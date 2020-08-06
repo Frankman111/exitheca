@@ -10,12 +10,12 @@ use Illuminate\Support\Facades\Session;
 
 class TagController extends Controller
 {
-        public function __construct()
-    {
-        $this->middleware('auth');
-        $this->middleware('admin');
-
-    }
+//        public function __construct()
+//    {
+//        $this->middleware('auth');
+//        $this->middleware('admin');
+//
+//    }
 
 
     /**
