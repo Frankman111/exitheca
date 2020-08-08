@@ -31,8 +31,8 @@
                                                        href="/library/{{ $library->id }}/edit"><i class="fas fa-edit"></i> Bearbeiten</a>
 
                                                     <span class="float-right">{{$library->updated_at->format('d-m-Y')}}</span>
-                                                        <div class="float-right mr-2">{{$library->verliehen}}</div>
-                                                    {{ $library->titel }}
+                                                        <div class="float-right mr-2"><b>{{$library->verliehen}}</b></div>
+                                                    <span style="font-size: large"><b>{{$library->titel}}</b></span>
                                                         <a class="ml-2" href="/library/{{ $library->id }} " data-toggle="tooltip" data-placement="top" title="Details" ><i class="fas fa-search-plus"></i>
                                                         <br>
                                                     @foreach($library->tags as $tag)

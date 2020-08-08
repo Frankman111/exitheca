@@ -13,7 +13,7 @@
                     <ul class="list-group">
                         @foreach($tags as $tag)
                             <li class="list-group-item" >
-                               <span style="font-size: 130%" class="mr-2 badge badge-{{ $tag->style }} ">{{$tag->name}}</span> ({{ $tag->style }})
+                               <span style="font-size: 130%" class="mr-2 badge badge-{{ $tag->style }} ">{{$tag->name}}</span>
 
                                 <form style="display: inline" action="/tag/{{ $tag->id }}" method="post">
                                 @csrf

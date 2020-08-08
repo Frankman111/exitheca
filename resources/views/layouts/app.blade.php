@@ -64,11 +64,11 @@
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}"><i class="fas fa-sign-in-alt"></i></a>
+                                <a class="nav-link" href="{{ route('login') }}" data-toggle="tooltip" data-placement="bottom" title="Einloggen"><i class="fas fa-sign-in-alt"></i></a>
                             </li>
                             @if (Route::has('register'))
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}"><i class="far fa-registered"></i></a>
+                                    <a class="nav-link" href="{{ route('register') }}" data-toggle="tooltip" data-placement="bottom" title="Registrieren"><i class="far fa-registered"></i></a>
                                 </li>
                             @endif
                         @else

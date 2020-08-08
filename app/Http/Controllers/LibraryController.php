@@ -21,6 +21,7 @@ class LibraryController extends Controller
 
     }
 
+
     /**
      * Display a listing of the resource.
      *
@@ -31,6 +32,7 @@ class LibraryController extends Controller
 
 
         $input_success = Session::get('input_success'); //Erfolgsmeldung refresh
+
 
 
 
