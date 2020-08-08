@@ -30,6 +30,8 @@ Route::resource('library', 'LibraryController');
 
 Route::resource('tag', 'TagController');
 
+Route::resource('store', 'StoreController');
+
 Route::get('/library/tag/{tag_id}', 'LibraryTagController@getFilteredLibraries')->name('library_tag');
 
 //Fremdzugriff von Tags unterbinden

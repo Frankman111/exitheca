@@ -43,10 +43,13 @@
                                     <a class="nav-link {{ Request::is('home') ? 'active' : '' }}" href="/home" data-toggle="tooltip" data-placement="bottom" title="Meine Seite"><i class="fas fa-house-user"></i></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link {{ Request::is('library*') ? 'active' : '' }}" href="/library" data-toggle="tooltip" data-placement="bottom" title="Meine Medien"><i class="fas fa-warehouse"></i></a>
+                                    <a class="nav-link {{ Request::is('library*') ? 'active' : '' }}" href="/library" data-toggle="tooltip" data-placement="bottom" title="Meine Medien"><i class="fas fa-archive"></i></a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link {{ Request::is('tag*') ? 'active' : '' }}" href="/tag" data-toggle="tooltip" data-placement="bottom" title="Tags hinzufügen"><i class="fas fa-tags"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link {{ Request::is('tag*') ? 'active' : '' }}" href="/store" data-toggle="tooltip" data-placement="bottom" title="Platz hinzufügen"><i class="fas fa-warehouse"></i></a>
                                 </li>
                             @endauth
 
