@@ -27,14 +27,13 @@
                                                         <a class="mr-1" title="Details anzeigen" href="/library/{{ $library->id }}">
                                                             <img src="/img/library/{{ $library->id }}_thumb.jpg" alt="thumb"></a>
                                                     @endif
-
                                                     <a class="ml-2 btn btn-sm btn-outline-primary float-right"
                                                        href="/library/{{ $library->id }}/edit"><i class="fas fa-edit"></i> Bearbeiten</a>
 
                                                     <span class="float-right">{{$library->updated_at->format('d-m-Y')}}</span>
+                                                        <div class="float-right mr-2">{{$library->verliehen}}</div>
                                                     {{ $library->titel }}
-                                                        <a class="ml-2" href="/library/{{ $library->id }} " data-toggle="tooltip" data-placement="top" title="Details" ><i class="fas fa-search-plus"></i></a>
-
+                                                        <a class="ml-2" href="/library/{{ $library->id }} " data-toggle="tooltip" data-placement="top" title="Details" ><i class="fas fa-search-plus"></i>
                                                         <br>
                                                     @foreach($library->tags as $tag)
                                                         <a class=" mt-3 badge badge-{{$tag->style}}" href="/library/tag/{{ $tag->id }}">{{ $tag->name }}</a>

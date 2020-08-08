@@ -41,13 +41,13 @@
                             </div>
                             <div class="form-group">
                                 <label for="verliehen">Verliehen an:</label>
-                                <input type="text" class="form-control {{ $errors->has('verliehen') ? 'border-danger' : '' }}" id="verliehen" name="verliehen" value="{{old('verliehen')}}">
-                                <div class="mt-3">
-                                    <label class="mr-3"  for="medium">Medium:</label>
-                                    <label class="mr-3"><input type="checkbox" name="medium" value="Blu-Ray"> Blu-Ray</label>
-                                    <label class="mr-3"><input type="checkbox" name="medium" value="DVD"> DVD</label>
-                                    <label><input type="checkbox" name="medium" value="Buch"> Buch</label>
-                                </div>
+                                <input type="text" class="form-control {{ $errors->has('verliehen') ? 'border-danger' : '' }}" id="verliehen" name="verliehen" value="{{old('verliehen')?? $library->verliehen}}">
+{{--                                <div class="mt-3">--}}
+{{--                                    <label class="mr-3"  for="medium">Medium:</label>--}}
+{{--                                    <label class="mr-3"><input type="checkbox" name="medium" value="Blu-Ray"> Blu-Ray</label>--}}
+{{--                                    <label class="mr-3"><input type="checkbox" name="medium" value="DVD"> DVD</label>--}}
+{{--                                    <label><input type="checkbox" name="medium" value="Buch"> Buch</label>--}}
+{{--                                </div>--}}
                             </div>
 
                             <input class="btn btn-primary mt-4" type="submit" value="absenden">

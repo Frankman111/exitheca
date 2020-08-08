@@ -31,8 +31,8 @@
                                         <input class="btn btn-outline-danger btn-sm float-right" type="submit" value="löschen">
                                     </form>
                                     <a class="mr-2 btn btn-outline-primary btn-sm float-right" href="/library/{{ $library->id }}/edit" ><i class="fas fa-pen-alt"></i>Bearbeiten</a>
-                                    {{--Ausgabe des Mediums --}}
-                                    <span class="badge badge-pill badge-danger float-right mr-3" style="font-size: large">{{$library->medium}}</span>
+{{--                                    --}}{{--Ausgabe des Mediums --}}
+{{--                                    <span class="badge badge-pill badge-danger float-right mr-3" style="font-size: large">{{$library->medium}}</span>--}}
                                     <div>
                                     {{--Tags angeben bei den Einträgen --}}
                                     @foreach($library->tags as $tag)
