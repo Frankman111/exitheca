@@ -33,7 +33,7 @@ class LibraryTagController extends Controller
         return view('library.filteredByTag')->with(
         [
             'libraries' => $filteredlibraries,
-            'tag' => $filter
+            'tag' => $tag
         ]
     );
 
