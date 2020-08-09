@@ -1,3 +1,20 @@
+Projekt Exitheca! Still Alpha Phase!
+
+Tasks to fulfill:
+
+- a little Database to go
+- should store infos about books, movies, musik etc.
+- filter function with tags -> media, title, lended to
+- overview for lended items
+- User friendly GUI and easy to use
+
+Open Tasks:
+
+- better code performance
+- better integration of paginate, search and views
+- database works but could be more professional
+
+
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
 <p align="center">
