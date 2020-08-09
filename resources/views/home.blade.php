@@ -3,7 +3,7 @@
 @section('content')
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-8">
+            <div class="col-md-12">
                 <div class="card">
                     <div class="card-header">Meine Seite</div>
                         <div class="card-body">
@@ -27,16 +27,16 @@
                                                         <a class="mr-1" title="Details anzeigen" href="/library/{{ $library->id }}">
                                                             <img src="/img/library/{{ $library->id }}_thumb.jpg" alt="thumb"></a>
                                                     @endif
-                                                    <span class="float-right">{{$library->updated_at}}</span>
-                                                    {{ $library->titel }}
-                                                        <a class="ml-2" href="/library/{{ $library->id }}">Detailansicht</a>
-
-                                                    <a class="ml-2 btn btn-sm btn-outline-primary"
+                                                    <a class="ml-2 btn btn-sm btn-outline-primary float-right"
                                                        href="/library/{{ $library->id }}/edit"><i class="fas fa-edit"></i> Bearbeiten</a>
 
+                                                    <span class="float-right">{{$library->updated_at->format('d-m-Y')}}</span>
+                                                        <div class="float-right mr-2"><b>{{$library->verliehen}}</b></div>
+                                                    <span style="font-size: large"><b>{{$library->titel}}</b></span>
+                                                        <a class="ml-2" href="/library/{{ $library->id }} " data-toggle="tooltip" data-placement="top" title="Details" ><i class="fas fa-search-plus"></i>
                                                         <br>
                                                     @foreach($library->tags as $tag)
-                                                        <a class="badge badge-{{$tag->style}}" href="/library/tag/{{ $tag->id }}">{{ $tag->name }}</a>
+                                                        <a class=" mt-3 badge badge-{{$tag->style}}" href="/library/tag/{{ $tag->id }}">{{ $tag->name }}</a>
                                                     @endforeach
                                                 </li>
                                                 @endisset
@@ -44,7 +44,7 @@
                                         </ul>
 
 
-                                    <a class="btn btn-success btn-sm mt-3   " href="/library/create"><i class="fas fa-plus-circle"></i> Neues Buch anlegen</a>
+                                    <a class="btn btn-success btn-sm mt-3   " href="/library/create" data-toggle="tooltip" data-placement="top" title="Medium hinzufügen"><i class="fas fa-plus-circle"></i></a>
                                 </div>
                             </div>
                         </div>

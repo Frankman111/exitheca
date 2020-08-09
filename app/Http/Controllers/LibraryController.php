@@ -14,12 +14,13 @@ use Illuminate\Support\Facades\Auth;
 class LibraryController extends Controller
 {
 
-//    public function __construct()
-//    {
-//        $this->middleware('auth');
-////        $this->middleware('admin');
-//
-//    }
+    public function __construct()
+    {
+        $this->middleware('auth');
+//        $this->middleware('admin');
+
+    }
+
 
     /**
      * Display a listing of the resource.
@@ -31,6 +32,7 @@ class LibraryController extends Controller
 
 
         $input_success = Session::get('input_success'); //Erfolgsmeldung refresh
+
 
 
 

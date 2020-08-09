@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Meine Bücher')
+@section('title', 'Meine Medien')
 
 @section('content')
 <div class="container">
@@ -9,7 +9,7 @@
             <div class="card">
 
 
-                <div class="card-header">Alle Bücher</div>
+                <div class="card-header">Alle Medien</div>
 
                 <div class="card-body">
                     <ul class="list-group">
@@ -33,11 +33,9 @@
                         @endforeach
                     </ul>
                     @auth
-                    <a class="btn btn-success btn-sm mt-3" href="/library/create"><i class="fas fa-plus-circle "></i> Neues Buch anlegen</a>
+                    <a class="btn btn-success btn-sm mt-3" href="/library/create" data-toggle="tooltip" data-placement="top" title="Medium hinzufügen"><i class="fas fa-plus-circle"></i> </a>
                     @endauth
-{{--                    <div class="mt-3">--}}
-{{--                        {{ $library->links() }}--}}
-{{--                    </div>--}}
+
                 </div>
             </div>
         </div>

@@ -1,13 +1,13 @@
 @extends('layouts.app')
 
-@section('title', 'Meine Bücher')
+@section('title', 'Meine Medien')
 
 @section('content')
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-12">
                 <div class="card">
-                    <div class="card-header">Buch bearbeiten</div>
+                    <div class="card-header">Medium bearbeiten</div>
 
                     <div class="card-body">
 
@@ -22,7 +22,7 @@
                             </div>
                             <div class="mb-2">
                                 @if(file_exists("img/library/" . $library->id . "_large.jpg"))
-                                        <img style="max-width: 400px; max-height: 300px;"  src="/img/library/{{ $library->id }}_large.jpg" alt="large"></a>
+                                        <img style="max-width: 400px; max-height: 300px;"  src="/img/library/{{ $library->id }}_large.jpg" alt="large">
                                         <div class="float-right">
                                             <a class="btn btn-sm btn-outline-danger" href="/delete-image/library/{{ $library->id  }}">Bild löschen</a>
                                         </div>
@@ -39,17 +39,15 @@
                                 <textarea class="form-control {{ $errors->has('beschreibung') ? 'border-danger' : '' }}" id="beschreibung" name="beschreibung" rows="5">{{ old('beschreibung') ?? $library->beschreibung }}</textarea>
                                 <small class="form-text text-danger">{!! $errors->first('beschreibung') !!}</small>
                             </div>
-                            <div class="form-group d-flex flex-row">
-                                <label for="titel">Verliehen an</label>
-                                <input type="text" class="form-control {{ $errors->has('verliehen') ? 'border-danger' : '' }}" id="verliehen" name="verliehen" value="{{$library->verliehen}}">
-                            <div class="form-group form-control {{ $errors->has('medium') ? 'border-danger' : '' }}">
-
-                                <strong>Medium :</strong><br>
-                                <label><input type="checkbox" name="medium" value="Blu-Ray"> Blu-Ray</label>
-                                <label><input type="checkbox" name="medium" value="DVD"> DVD</label>
-                                <label><input type="checkbox" name="medium" value="Buch"> Buch</label>
-                            </div>
-
+                            <div class="form-group">
+                                <label for="verliehen">Verliehen an:</label>
+                                <input type="text" class="form-control {{ $errors->has('verliehen') ? 'border-danger' : '' }}" id="verliehen" name="verliehen" value="{{old('verliehen')?? $library->verliehen}}">
+{{--                                <div class="mt-3">--}}
+{{--                                    <label class="mr-3"  for="medium">Medium:</label>--}}
+{{--                                    <label class="mr-3"><input type="checkbox" name="medium" value="Blu-Ray"> Blu-Ray</label>--}}
+{{--                                    <label class="mr-3"><input type="checkbox" name="medium" value="DVD"> DVD</label>--}}
+{{--                                    <label><input type="checkbox" name="medium" value="Buch"> Buch</label>--}}
+{{--                                </div>--}}
                             </div>
 
                             <input class="btn btn-primary mt-4" type="submit" value="absenden">

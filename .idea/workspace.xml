@@ -19,15 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b379e2e8-d072-452a-a5cc-aec188060080" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LibraryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/LibraryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LibraryTagController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/LibraryTagController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TagController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TagController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_04_173955_medium_in_libraries_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/library/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/library/show.blade.php" afterDir="false" />
-    </list>
+    <list default="true" id="644925bb-f274-44e1-846b-69b383cccec0" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -185,6 +177,7 @@
       <recent name="C:\xampp\htdocs\Exitheca\exitheca\resources\lang\de" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Exitheca\exitheca\public\img\carousel" />
       <recent name="C:\xampp\htdocs\Exitheca\exitheca\public\img" />
       <recent name="C:\xampp\htdocs\Exitheca\exitheca\resources\views\library" />
     </key>
@@ -265,9 +258,10 @@
       <screen x="1920" y="-203" width="2560" height="1400" />
     </state>
     <state x="2701" y="142" key="SettingsEditor/0.0.1920.1040/1920.-203.2560.1400@1920.-203.2560.1400" timestamp="1596134151777" />
-    <state x="2697" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596454184202">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="2956" y="381" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596727690722">
+      <screen x="1920" y="-203" width="2560" height="1400" />
     </state>
+    <state x="2956" y="381" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.-203.2560.1400@1920.-203.2560.1400" timestamp="1596727690722" />
     <state x="2697" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1596454184202" />
     <state x="2536" y="240" key="run.anything.popup" timestamp="1596217633526">
       <screen x="1920" y="0" width="1920" height="1040" />
