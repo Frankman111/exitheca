@@ -1,6 +1,8 @@
-Projekt Exitheca! Still Alpha Phase!
+Projekt Exitheca!
 
-Tasks to fulfill:
+Still Alpha Phase!
+
+Tasks fulfilled:
 
 - a little Database to go
 - should store infos about books, movies, musik etc.
@@ -11,7 +13,7 @@ Tasks to fulfill:
 Open Tasks:
 
 - better code performance
-- better integration of paginate, search and views
+- integration of paginate, search and views
 - database works but could be more professional
 
 
