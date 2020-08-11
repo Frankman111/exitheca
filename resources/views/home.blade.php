@@ -15,6 +15,7 @@
                                         </div>
                                     @endif
                                 </div>
+
                                         @if($libraries->count() > 0)
 
                                             <h5>Verliehen:</h5>

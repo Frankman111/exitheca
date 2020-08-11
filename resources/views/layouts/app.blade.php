@@ -57,10 +57,21 @@
                             <li class="nav-item">
                                 <a class="nav-link {{ Request::is('info') ? 'active' : '' }} " href="/info" data-toggle="tooltip" data-placement="top" title="Information"><i class="fas fa-info" ></i></a>
                             </li>
-                    </ul>
 
+                    </ul>
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
+                        @auth
+                            <li>
+                                <div class="input-group float-right mr-2 mt-2">
+                                    <input type="text" class="form-control" placeholder="Search ......" aria-label="Recipient's username">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text"><i class="fa fa-search"></i></span>
+                                    </div>
+                                </div>
+
+                            </li>
+                        @endauth
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
