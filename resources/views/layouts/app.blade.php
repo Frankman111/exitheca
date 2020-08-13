@@ -20,7 +20,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    
+
 </head>
 <body>
     <div id="app">
@@ -49,12 +49,11 @@
                                 </li>
                             @endauth
 
-
-
-
-
                             <li class="nav-item">
                                 <a class="nav-link {{ Request::is('info') ? 'active' : '' }} " href="/info" data-toggle="tooltip" data-placement="top" title="Information"><i class="fas fa-info" ></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link {{ Request::is('kontakt') ? 'active' : '' }} " href="/kontakt" data-toggle="tooltip" data-placement="top" title="Kontakt"><i class="fas fa-envelope" ></i></a>
                             </li>
 
                     </ul>
