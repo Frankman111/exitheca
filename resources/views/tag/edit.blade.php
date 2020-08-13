@@ -1,13 +1,13 @@
 @extends('layouts.app')
 
-@section('title', 'Meine Bücher')
+@section('title', 'Meine Tags')
 
 @section('content')
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-12">
                 <div class="card">
-                    <div class="card-header">Tag bearbeiten</div>
+                    <div class="card-header"><b>Tag bearbeiten</b></div>
 
                     <div class="card-body">
 

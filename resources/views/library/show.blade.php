@@ -1,13 +1,13 @@
 @extends('layouts.app')
 
-@section('title', 'Meine Bücher')
+@section('title', 'Meine Medien')
 
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="card">
-                <div class="card-header">Medien Details</div>
+                <div class="card-header"><b>Medien Details</b></div>
 
                 <div class="card-body">
                     <div class="row">

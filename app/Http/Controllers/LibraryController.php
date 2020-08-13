@@ -33,13 +33,13 @@ class LibraryController extends Controller
 
         $input_success = Session::get('input_success'); //Erfolgsmeldung refresh
 
+        $libraries = Library::paginate(5);
 
 
-
-        $libraries = Library::select()
-            ->where('user_id', auth()->id())
-            ->orderBy('updated_at', 'DESC')
-            ->get();
+//        $libraries = Library::select()
+//            ->where('user_id', auth()->id())
+//            ->orderBy('updated_at', 'DESC')
+//            ->get();
 
         return view('library.filteredByTag')->with(
             [

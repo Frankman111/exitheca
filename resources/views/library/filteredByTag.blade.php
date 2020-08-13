@@ -7,7 +7,7 @@
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="card">
-                <div class="card-header">Alle Medien</div>
+                <div class="card-header"><b>Alle Medien</b></div>
 
                 <div class="card-body">
                     <ul class="list-group">
@@ -49,6 +49,9 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="mt-3">
+        {{ $libraries->links() }}
     </div>
 </div>
 @endsection

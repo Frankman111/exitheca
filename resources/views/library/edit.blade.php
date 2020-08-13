@@ -7,7 +7,7 @@
         <div class="row justify-content-center">
             <div class="col-md-12">
                 <div class="card">
-                    <div class="card-header">Medium bearbeiten</div>
+                    <div class="card-header"><b>Medium bearbeiten</b></div>
 
                     <div class="card-body">
 

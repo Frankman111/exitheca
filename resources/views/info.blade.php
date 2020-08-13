@@ -7,7 +7,7 @@
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="card">
-                <div class="card-header">Information</div>
+                <div class="card-header"><b>Information</b></div>
 
                 <div class="card-body">
                     <h1>Disclaimer – rechtliche Hinweise</h1>
@@ -28,6 +28,56 @@
                         Der Anbieter behält sich rechtliche Schritte für den Fall der unverlangten Zusendung von Werbeinformationen, z. B. durch Spam-Mails, vor.<br />
                         <strong>Quelle</strong>: <a href="http://www.mustervorlage.net/disclaimer-muster/">Muster Disclaimer</a>
                 </div>
+                <pre>
+                    <b>Impressum</b>
+
+                    Informationspflicht laut §5 E-Commerce Gesetz, §14 Unternehmensgesetzbuch, §63 Gewerbeordnung und Offenlegungspflicht laut §25 Mediengesetz.
+
+                    MusterFirma
+                    Max Mustermann
+                    Musterstrasse 1, Stiege 1 Tür 1,
+                    1234 Musterhausen,
+                    Österreich
+
+                    Unternehmensgegenstand: IT Dienstleistungen
+                    UID-Nummer: ATU12345678
+
+                    Tel.: 01234/56789
+                    Fax: 01234/56789-0
+
+                    Mitglied bei: WKO, Landesinnung, etc.
+                    Berufsrecht: Gewerbeordnung: www.ris.bka.gv.at
+
+                    Aufsichtsbehörde/Gewerbebehörde: Bezirkshauptmannschaft Musterhausen
+                    Berufsbezeichnung: Webdesigner, Grafiker
+                    Verleihungsstaat: Österreich
+
+                    Blattlinie
+                    z.B. Informationen rund um Schönheitsbehandlungen und Schönheitsoperationen sowie kosmetische Behandlungen und Erfahrungsberichte darüber.
+
+                    Quelle: Erstellt mit dem Impressum Generator von firmenwebseiten.at in Kooperation mit pressefeuer.at
+                    EU-Streitschlichtung
+
+                    Angaben zur Online-Streitbeilegung: Verbraucher haben die Möglichkeit, Beschwerden an die OnlineStreitbeilegungsplattform der EU zu richten: https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&lng=DE. Sie können allfällige Beschwerde auch an die oben angegebene E-Mail-Adresse richten.
+                    Haftung für Inhalte dieser Webseite
+
+                    Wir entwickeln die Inhalte dieser Webseite ständig weiter und bemühen uns korrekte und aktuelle Informationen bereitzustellen. Leider können wir keine Haftung für die Korrektheit aller Inhalte auf dieser Webseite übernehmen, speziell für jene die seitens Dritter bereitgestellt wird. Sollten Ihnen problematische oder rechtswidrige Inhalte auffallen, bitte wir Sie uns umgehend zu kontaktieren, Sie finden die Kontaktdaten im Impressum.
+                    Haftung für Links auf dieser Webseite
+
+                    Unsere Webseite enthält Links zu anderen Webseiten für deren Inhalt wir nicht verantwortlich sind. Wenn Ihnen rechtswidrige Links auf unserer Webseite auffallen, bitte wir Sie uns zu kontaktieren, Sie finden die Kontaktdaten im Impressum.
+                    Urheberrechtshinweis
+
+                    Alle Inhalte dieser Webseite (Bilder, Fotos, Texte, Videos) unterliegen dem Urheberrecht. Falls notwendig, werden wir die unerlaubte Nutzung von Teilen der Inhalte unserer Seite rechtlich verfolgen.
+                    Bildernachweis
+
+                    Die Bilder, Fotos und Grafiken auf dieser Webseite sind urheberrechtlich geschützt.
+
+                    Die Bilderrechte liegen bei den folgenden Fotografen und Unternehmen:
+
+                    Fotograf Mustermann
+                    AdSimple Bilder
+
+                </pre>
             </div>
         </div>
     </div>

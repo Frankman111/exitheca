@@ -9,7 +9,7 @@
             <div class="card">
 
 
-                <div class="card-header">Alle Medien</div>
+                <div class="card-header"><b>Alle Medien</b></div>
 
                 <div class="card-body">
                     <ul class="list-group">
@@ -35,12 +35,13 @@
                     @auth
                     <a class="btn btn-success btn-sm mt-3" href="/library/create" data-toggle="tooltip" data-placement="top" title="Medium hinzufügen"><i class="fas fa-plus-circle"></i> </a>
                     @endauth
-
                 </div>
             </div>
         </div>
         @include('_partials.deleteForm')
     </div>
-
+    <div class="mt-3">
+        {{ $libraries->links() }}
+    </div>
 </div>
 @endsection

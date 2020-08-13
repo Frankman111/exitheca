@@ -1,13 +1,13 @@
 @extends('layouts.app')
 
-@section('title', 'Meine Bücher')
+@section('title', 'Meine Tags')
 
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="card">
-                <div class="card-header">Alle Tags</div>
+                <div class="card-header"><b>Alle Tags</b></div>
 
                 <div class="card-body">
                     <ul class="list-group">
@@ -28,6 +28,9 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="mt-3">
+        {{ $tags->links() }}
     </div>
 </div>
 @endsection

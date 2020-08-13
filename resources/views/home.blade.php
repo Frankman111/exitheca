@@ -5,7 +5,7 @@
         <div class="row justify-content-center">
             <div class="col-md-12">
                 <div class="card">
-                    <div class="card-header">Meine Seite</div>
+                    <div class="card-header"><b>Meine Seite</b></div>
                         <div class="card-body">
                             <div class="row">
                                     <h2 class="ml-3">Hallo {{auth()->user()->name }}</h2>
